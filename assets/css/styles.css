@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Bungee Shade";
+  src: url("/assets/fonts/BungeeShade.ttf");
+}
+
+@font-face {
+  font-family: "Libre Barcode 39 Extended Text";
+  src: url("/assets/fonts/LibreBarcode39ExtendedText.ttf");
+}
+
+@font-face {
+  font-family: "Readex Pro";
+  src: url("/assets/fonts/ReadexPro.ttf");
+}
+
+:root {
+  --black: #110903;
+  --yellow: #f6de28;
+  --red: #ed0312;
+  --blue: #3b28b8;
+  --white: #f4fffd;
+
+  background-color: var(--yellow);
+  font-family: "Readex Pro";
+  margin: 0;
+  user-select: none;
+}
+
+.date__updated {
+  font-family: "Libre Barcode 39 Extended Text";
+  font-size: 32px;
+}
+
+.box {
+  padding: 40px 80px;
+}
+
+.main__text {
+  display: block;
+  font-size: 68px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__item {
+  font-size: 34px;
+}
