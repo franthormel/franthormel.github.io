@@ -26,13 +26,15 @@
   user-select: none;
 }
 
+.box {
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .date__updated {
   font-family: "Libre Barcode 39 Extended Text";
   font-size: 32px;
-}
-
-.box {
-  padding: 40px 80px;
 }
 
 .main__text {
@@ -43,8 +45,8 @@
 }
 
 .navigation {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
 
 .navigation__item {
