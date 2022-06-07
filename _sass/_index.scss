@@ -1,14 +1,14 @@
-
-
 .box {
   display: flex;
   flex-flow: column;
   height: 85%;
 }
 
-.nav__date {
-  font-family: "Libre Barcode 39 Extended Text";
-  font-size: 26px;
+.nav__logo {
+  $size: 32px;
+
+  height: $size;
+  width: $size;
 }
 
 .box__nav {
