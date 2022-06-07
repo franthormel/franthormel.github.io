@@ -1,18 +1,19 @@
-.nav__bar {
+.appbar__nav {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
-  padding: 25px 40px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+  @include padding-global;
 }
 
-.nav__logo {
+.appbar__nav__logo {
   $size: 35px;
 
   height: $size;
   width: $size;
 }
 
-.nav__item {
+.appbar__nav__item {
   font-size: 26px;
   margin-left: 50px;
 }

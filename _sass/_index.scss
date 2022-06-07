@@ -1,16 +1,10 @@
-.box {
-  display: flex;
-  flex-flow: column;
-  height: 85%;
-}
-
-.box__main {
+.homepage__main {
   display: grid;
-  place-items: center;
   margin: auto;
+  place-items: center;
 }
 
-.main__text {
+.homepage__main__text {
   display: block;
   font-size: 68px;
   font-weight: bold;

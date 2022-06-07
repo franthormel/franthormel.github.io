@@ -1,0 +1,7 @@
+.default__body {
+  display: flex;
+  flex-flow: column;
+  height: 85%;
+
+  @include padding-global;
+}
