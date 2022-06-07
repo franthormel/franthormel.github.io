@@ -14,29 +14,29 @@
 }
 
 :root {
-  --black: #110903;
-  --yellow: #f6dd28;
-  --red: #ed0312;
-  --blue: #3b28b8;
-  --white: #f4fffd;
+  --color-primary: #110903;
+  --color-accent: #f6dd28;
+  --color-error: #ed0312;
+  --color-tertiary: #3b28b8;
+  --color-offset: #f4fffd;
 
-  background-color: var(--yellow);
+  background-color: var(--color-accent);
   font-family: "Readex Pro";
   height: 100%;
   user-select: none;
 
   body {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 }
 
 a {
   cursor: pointer;
   text-decoration: none;
-  color: var(--black);
+  color: var(--color-primary);
 }
 
 a:hover {
-  text-decoration: underline var(--black) 3px;
+  text-decoration: underline var(--color-primary) 3px;
 }

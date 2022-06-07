@@ -1,0 +1,18 @@
+.nav__bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nav__logo {
+  $size: 35px;
+
+  height: $size;
+  width: $size;
+}
+
+.nav__item {
+  font-size: 26px;
+  margin-left: 50px;
+}
