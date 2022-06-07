@@ -23,10 +23,20 @@
   background-color: var(--yellow);
   font-family: "Readex Pro";
   height: 100%;
-  margin: 0;
   user-select: none;
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 a {
   cursor: pointer;
+  text-decoration: none;
+  color: var(--black);
+}
+
+a:hover {
+  text-decoration: underline var(--black);
 }

@@ -1,0 +1,37 @@
+
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 85%;
+}
+
+.nav__date {
+  font-family: "Libre Barcode 39 Extended Text";
+  font-size: 26px;
+}
+
+.box__nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 3.5%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nav__item {
+  font-size: 26px;
+  margin-left: 50px;
+}
+
+.box__main {
+  display: grid;
+  place-items: center;
+  margin: auto;
+}
+
+.main__text {
+  display: block;
+  font-size: 68px;
+  font-weight: bold;
+  text-align: center;
+}
