@@ -11,10 +11,11 @@ title: Contact Information
   </header>
   <header class="contact__main__others">Social links</header>
   <div class="contact__main__social">
-    <span>Si</span>
-    <span>Si</span>
-    <span>Si</span>
-    <span>Si</span>
-    <span>Si</span>
+    <!-- TODO: Grid layout use grid-column and grid-row -->
+    {% for social_profile in site.data.social_profiles %}
+    <div class="contact__main__social__{{ social_profile.name | downcase }}">
+      {{ social_profile.name | capitalize }}
+    </div>
+    {% endfor %}
   </div>
 </main>
