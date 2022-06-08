@@ -2,6 +2,10 @@
   padding: 25px 40px;
 }
 
+@mixin padding-main-global {
+  padding: 10px 40px;
+}
+
 @font-face {
   font-family: "Bungee Shade";
   src: url("/assets/fonts/BungeeShade.ttf");
@@ -41,6 +45,3 @@ a {
   color: var(--color-primary);
 }
 
-a:hover {
-  text-decoration: underline var(--color-primary) 3px;
-}

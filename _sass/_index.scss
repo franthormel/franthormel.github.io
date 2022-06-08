@@ -1,7 +1,7 @@
 .homepage__main {
-  display: grid;
   margin: auto;
-  place-items: center;
+
+  @include padding-main-global;
 }
 
 .homepage__main__text {
