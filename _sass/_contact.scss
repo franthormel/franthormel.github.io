@@ -3,8 +3,9 @@
 }
 
 .contact__main__header {
-  font-size: xx-large;
+  font-size: 50px;
   font-weight: 800;
+  padding: 40px 30px;
   text-align: center;
 }
 
@@ -13,6 +14,18 @@
 }
 
 .contact__main__others {
-  margin-top: 5%;
-  font-size: large;
+  font-size: 25px;
+  padding: 40px 0 20px;
+}
+
+.contact__main__social {
+  display: grid;
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.contact__main__social * {
+  background-color: red;
+
 }
