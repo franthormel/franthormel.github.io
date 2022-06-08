@@ -1,9 +1,9 @@
-@mixin padding-global {
+@mixin padding-appbar {
   padding: 25px 40px;
 }
 
-@mixin padding-main-global {
-  padding: 10px 40px;
+@mixin padding-global {
+  padding: 40px;
 }
 
 @font-face {
@@ -44,4 +44,3 @@ a {
   text-decoration: none;
   color: var(--color-primary);
 }
-

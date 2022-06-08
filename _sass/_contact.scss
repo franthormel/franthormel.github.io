@@ -1,3 +1,18 @@
 .contact__main {
-  @include padding-main-global;
+  @include padding-global;
+}
+
+.contact__main__header {
+  font-size: xx-large;
+  font-weight: 800;
+  text-align: center;
+}
+
+.contact__main__email {
+  text-decoration: underline;
+}
+
+.contact__main__others {
+  margin-top: 5%;
+  font-size: large;
 }
