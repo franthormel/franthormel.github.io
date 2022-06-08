@@ -1,19 +1,19 @@
-.appbar__nav {
+.navbar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
 
-  @include padding-appbar;
+  @include padding-navbar;
 }
 
-.appbar__nav__logo {
+.navbar__logo {
   $size: 35px;
 
   height: $size;
   width: $size;
 }
 
-.appbar__nav__item {
+.navbar__item {
   $duration: 125ms;
 
   border-radius: 12px;
@@ -24,7 +24,7 @@
   transition: background-color $duration, color $duration;
 }
 
-.appbar__nav__item:hover {
+.navbar__item:hover {
   background-color: var(--color-primary);
   color: var(--color-accent);
   text-decoration-line: none;
