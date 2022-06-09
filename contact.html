@@ -12,7 +12,12 @@ title: Contact Information
   <div class="contact__social">
     {% for social_profile in site.data.social_profiles %}
     <div class="contact__social__item">
-      {{ social_profile.name | capitalize }}
+      <img
+        class="contact__social__logo"
+        src="assets/svg/brand-{{ social_profile.name | downcase }}.svg"
+      />
+      <header>{{ social_profile.name | capitalize }}</header>
+      <p class="contact__social__text">{{ social_profile.description }}</p>
     </div>
     {% endfor %}
   </div>

@@ -2,6 +2,14 @@
   padding: 20px 40px;
 }
 
+@mixin transition($name) {
+  @if $name {
+    transition: $name 150ms;
+  } @else {
+    @warn "Transition name is required.";
+  }
+}
+
 @font-face {
   font-family: "Bungee Shade";
   src: url("/assets/fonts/BungeeShade.ttf");

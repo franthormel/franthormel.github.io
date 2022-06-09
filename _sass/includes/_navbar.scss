@@ -13,14 +13,13 @@
 }
 
 .navbar__item {
-  $duration: 125ms;
-
   border-radius: 12px;
   font-size: 26px;
   margin-left: 35px;
   padding: 10px;
 
-  transition: background-color $duration, color $duration;
+  @include transition(background-color);
+  @include transition(color);
 }
 
 .navbar__item:hover {

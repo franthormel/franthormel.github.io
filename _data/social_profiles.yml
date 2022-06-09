@@ -2,8 +2,11 @@
 
 - name: GitHub
   link: https://github.com/franthormel/
+  description: "GitHub is where I showcase my works and you could see more of my activity here."
+
 - name: Dribbble
   link: https://dribbble.com/denmind
+  description: "I have a growing interest in the field of design which is why I have decided to use Dribbble to occasionally showcase what I have recently created."
 # - name: Behance
 #   link: https://www.behance.net/denmind
 # - name: GoodReads
