@@ -1,22 +1,22 @@
 .navbar {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid var(--color-primary);
   display: flex;
   justify-content: space-between;
-  padding: 25px 40px;
+  padding: 5vh 5vw;
 }
 
 .navbar__logo {
-  $size: 35px;
+  $size: 40px;
 
   height: $size;
   width: $size;
 }
 
 .navbar__item {
-  border-radius: 12px;
-  font-size: 26px;
-  margin-left: 35px;
-  padding: 10px;
+  border-radius: 5px;
+  font-size: x-large;
+  margin-left: 1vw;
+  padding: 1vh 1vw;
 
   @include transition(background-color);
   @include transition(color);

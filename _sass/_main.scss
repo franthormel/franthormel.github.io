@@ -1,5 +1,5 @@
 @mixin padding-content {
-  padding: 20px 40px;
+  padding: 5vh 5vw;
 }
 
 @mixin transition($name) {
@@ -8,11 +8,6 @@
   } @else {
     @warn "Transition name is required.";
   }
-}
-
-@font-face {
-  font-family: "Bungee Shade";
-  src: url("/assets/fonts/BungeeShade.ttf");
 }
 
 @font-face {
