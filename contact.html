@@ -11,14 +11,16 @@ title: Contact Information
   </header>
   <div class="contact__social">
     {% for social_profile in site.data.social_profiles %}
-    <div class="contact__social__item">
-      <img
-        class="contact__social__logo"
-        src="assets/svg/brand-{{ social_profile.name | downcase }}.svg"
-      />
-      <header>{{ social_profile.name | capitalize }}</header>
-      <p class="contact__social__text">{{ social_profile.description }}</p>
-    </div>
+    <a href="{{ social_profile.link }}" target="_blank">
+      <div class="contact__social__item">
+        <img
+          class="contact__social__logo"
+          src="assets/svg/brand-{{ social_profile.name | downcase }}.svg"
+        />
+        <header>{{ social_profile.name | capitalize }}</header>
+        <p class="contact__social__text">{{ social_profile.description }}</p>
+      </div>
+    </a>
     {% endfor %}
   </div>
 </main>
