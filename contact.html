@@ -2,18 +2,16 @@
 title: Contact Information
 ---
 
-<main class="contact__main">
-  <header class="contact__main__header">
+<main class="contact">
+  <header class="contact__header">
     Email me
-    <a class="contact__main__email" href="mailto:{{ site.email }}">
+    <a class="contact__email" href="mailto:{{ site.email }}" target="_blank">
       {{ site.email }}
     </a>
   </header>
-  <header class="contact__main__others">Social links</header>
-  <div class="contact__main__social">
-    <!-- TODO: Grid layout use grid-column and grid-row -->
+  <div class="contact__social">
     {% for social_profile in site.data.social_profiles %}
-    <div class="contact__main__social__{{ social_profile.name | downcase }}">
+    <div class="contact__social__item">
       {{ social_profile.name | capitalize }}
     </div>
     {% endfor %}

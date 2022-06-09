@@ -1,30 +1,27 @@
-.contact__main {
+.contact {
   @include padding-content;
 }
 
-.contact__main__header {
+.contact__header {
   font-size: 50px;
   font-weight: 800;
-  padding: 40px 30px;
+  padding: 30px;
   text-align: center;
 }
 
-.contact__main__email {
+.contact__email {
   text-decoration: underline;
 }
 
-.contact__main__others {
-  font-size: 25px;
-  padding: 40px 0 20px;
-}
-
-.contact__main__social {
+.contact__social {
   display: grid;
-  gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+  gap: 24px;
+  grid-auto-rows: minmax(120px, auto);
   grid-template-columns: repeat(3, 1fr);
+  padding: 20px 120px 0;
 }
 
-.contact__main__social * {
+.contact__social__item {
   background-color: red;
+  padding: 24px;
 }

@@ -1,10 +1,10 @@
-.homepage__main {
+.homepage {
   margin: auto;
 
   @include padding-content;
 }
 
-.homepage__main__text {
+.homepage__text {
   display: block;
   font-size: 68px;
   font-weight: bold;
