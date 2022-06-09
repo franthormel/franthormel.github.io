@@ -1,0 +1,58 @@
+.contact {
+  @include padding-content;
+}
+
+.contact__header {
+  font-size: 50px;
+  font-weight: 800;
+  padding: 5vh;
+  text-align: center;
+}
+
+.contact__email {
+  text-decoration: underline 2px;
+
+  @include transition(text-decoration-thickness);
+}
+
+.contact__email:hover {
+  text-decoration-thickness: 4px;
+}
+
+.contact__social {
+  display: grid;
+  gap: 5vw;
+  grid-auto-rows: minmax(auto, auto);
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10vh 15vw 0;
+}
+
+.contact__social__item {
+  border-radius: 4px;
+  font-size: larger;
+  font-weight: 600;
+  outline: 3px solid var(--color-primary);
+  padding: 4vh;
+
+  @include transition(outline-width);
+}
+
+.contact__social__item:hover {
+  cursor: pointer;
+  outline-width: 5px;
+}
+
+.contact__social__logo {
+  $size: 35px;
+
+  display: block;
+  height: $size;
+  padding-bottom: 3vh;
+  width: $size;
+}
+
+.contact__social__text {
+  font-size: medium;
+  font-weight: 400;
+  text-align: justify;
+}

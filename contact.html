@@ -1,0 +1,26 @@
+---
+title: Contact Information
+---
+
+<main class="contact">
+  <header class="contact__header">
+    Email me
+    <a class="contact__email" href="mailto:{{ site.email }}" target="_blank">
+      {{ site.email }}
+    </a>
+  </header>
+  <div class="contact__social">
+    {% for social_profile in site.data.social_profiles %}
+    <a href="{{ social_profile.link }}" target="_blank">
+      <div class="contact__social__item">
+        <img
+          class="contact__social__logo"
+          src="assets/svg/brand-{{ social_profile.name | downcase }}.svg"
+        />
+        <header>{{ social_profile.name | capitalize }}</header>
+        <p class="contact__social__text">{{ social_profile.description }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</main>

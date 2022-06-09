@@ -1,0 +1,12 @@
+.homepage {
+  margin: auto;
+
+  @include padding-content;
+}
+
+.homepage__text {
+  display: block;
+  font-size: 68px;
+  font-weight: bold;
+  text-align: center;
+}

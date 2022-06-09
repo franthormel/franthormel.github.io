@@ -1,0 +1,29 @@
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 40px;
+}
+
+.navbar__logo {
+  $size: 35px;
+
+  height: $size;
+  width: $size;
+}
+
+.navbar__item {
+  border-radius: 12px;
+  font-size: 26px;
+  margin-left: 35px;
+  padding: 10px;
+
+  @include transition(background-color);
+  @include transition(color);
+}
+
+.navbar__item:hover {
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+  text-decoration-line: none;
+}
