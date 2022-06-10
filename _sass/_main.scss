@@ -32,7 +32,7 @@
   height: 100%;
   user-select: none;
 
-  body {
+  .body {
     margin: 0;
     padding: 0;
   }
@@ -67,7 +67,7 @@ a {
 
 .about__social {
   display: grid;
-  gap: 3vw;
+  gap: 2vw;
   grid-auto-rows: minmax(auto, auto);
   grid-template-columns: repeat(2, 1fr);
   padding: 0 20vw;
@@ -77,15 +77,16 @@ a {
   border-radius: 4px;
   font-size: larger;
   font-weight: 600;
-  outline: 3px solid var(--color-primary);
+  border: 2px solid var(--color-primary);
   padding: 4vh;
+  @include transition(color);
+  @include transition(background-color);
 
-  @include transition(outline-width);
-}
-
-.about__social__item:hover {
-  cursor: pointer;
-  outline-width: 5px;
+  &:hover {
+    cursor: pointer;
+    color: var(--color-accent);
+    background-color: var(--color-primary);
+  }
 }
 
 .about__social__logo {
@@ -115,7 +116,7 @@ a {
   border-bottom: 2px solid var(--color-primary);
   display: flex;
   justify-content: space-between;
-  padding: 5vh 5vw;
+  padding: 3.09vh 5vw;
 }
 
 .body__navbar__logo {
@@ -133,12 +134,12 @@ a {
 
   @include transition(background-color);
   @include transition(color);
-}
 
-.body__navbar__item:hover {
-  background-color: var(--color-primary);
-  color: var(--color-accent);
-  text-decoration-line: none;
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+    text-decoration-line: none;
+  }
 }
 
 .homepage {
