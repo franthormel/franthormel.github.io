@@ -2,24 +2,24 @@
 title: About
 ---
 
-<main class="contact">
-  <div class="contact__info">
-    <header class="contact__info__header">How are you?</header>
+<main class="about">
+  <div class="about__me">
+    <header class="about__header">How are you?</header>
     {% for data in site.data.about_me %}
-    <p class="contact__info__body">{{ data.text }}</p>
+    <p class="about__body">{{ data.text }}</p>
     {% endfor %}
     <p>Hope we cant meet again!</p>
   </div>
-  <div class="contact__social">
+  <div class="about__social">
     {% for social_profile in site.data.social_profiles %}
     <a href="{{ social_profile.link }}" target="_blank">
-      <div class="contact__social__item">
+      <div class="about__social__item">
         <img
-          class="contact__social__logo"
+          class="about__social__logo"
           src="assets/svg/brand-{{ social_profile.name | downcase }}.svg"
         />
         <header>{{ social_profile.name | capitalize }}</header>
-        <p class="contact__social__text">{{ social_profile.description }}</p>
+        <p class="about__social__text">{{ social_profile.description }}</p>
       </div>
     </a>
     {% endfor %}

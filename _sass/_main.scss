@@ -43,3 +43,117 @@ a {
   text-decoration: none;
   color: var(--color-primary);
 }
+
+.about {
+  @include padding-content;
+}
+
+.about__me {
+  padding: 0 20vw 5vh;
+}
+
+.about__header {
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.about__body {
+  text-align: justify;
+}
+
+.articles {
+  @include padding-content;
+}
+
+.about__social {
+  display: grid;
+  gap: 3vw;
+  grid-auto-rows: minmax(auto, auto);
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 20vw;
+}
+
+.about__social__item {
+  border-radius: 4px;
+  font-size: larger;
+  font-weight: 600;
+  outline: 3px solid var(--color-primary);
+  padding: 4vh;
+
+  @include transition(outline-width);
+}
+
+.about__social__item:hover {
+  cursor: pointer;
+  outline-width: 5px;
+}
+
+.about__social__logo {
+  $size: 35px;
+
+  display: block;
+  height: $size;
+  padding-bottom: 3vh;
+  width: $size;
+}
+
+.about__social__text {
+  font-size: medium;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.body {
+  display: flex;
+  flex-flow: column;
+  height: 85%;
+
+  @include padding-content;
+}
+
+.body__navbar {
+  border-bottom: 2px solid var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  padding: 5vh 5vw;
+}
+
+.body__navbar__logo {
+  $size: 40px;
+
+  height: $size;
+  width: $size;
+}
+
+.body__navbar__item {
+  border-radius: 5px;
+  font-size: x-large;
+  margin-left: 1vw;
+  padding: 1vh 1vw;
+
+  @include transition(background-color);
+  @include transition(color);
+}
+
+.body__navbar__item:hover {
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+  text-decoration-line: none;
+}
+
+.homepage {
+  margin: auto;
+
+  @include padding-content;
+}
+
+.homepage__text {
+  display: block;
+  font-size: 68px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.works {
+  @include padding-content;
+}
