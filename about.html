@@ -1,14 +1,15 @@
 ---
-title: Contact Information
+title: About
 ---
 
 <main class="contact">
-  <header class="contact__header">
-    Email me
-    <a class="contact__email" href="mailto:{{ site.email }}" target="_blank">
-      {{ site.email }}
-    </a>
-  </header>
+  <div class="contact__info">
+    <header class="contact__info__header">How are you?</header>
+    {% for data in site.data.about_me %}
+    <p class="contact__info__body">{{ data.text }}</p>
+    {% endfor %}
+    <p>Hope we cant meet again!</p>
+  </div>
   <div class="contact__social">
     {% for social_profile in site.data.social_profiles %}
     <a href="{{ social_profile.link }}" target="_blank">

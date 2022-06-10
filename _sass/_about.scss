@@ -19,12 +19,25 @@
   text-decoration-thickness: 4px;
 }
 
+.contact__info {
+  padding: 0 20vw 5vh;
+}
+
+.contact__info__header {
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.contact__info__body {
+  text-align: justify;
+}
+
 .contact__social {
   display: grid;
-  gap: 5vw;
+  gap: 3vw;
   grid-auto-rows: minmax(auto, auto);
   grid-template-columns: repeat(2, 1fr);
-  padding: 10vh 15vw 0;
+  padding: 0 20vw;
 }
 
 .contact__social__item {

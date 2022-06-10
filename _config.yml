@@ -1,7 +1,7 @@
 baseurl: ""
 url: ""
 
-email: "fcaboyo@gmail.com"
+email: fcaboyo@gmail.com
 
 defaults:
   - scope:

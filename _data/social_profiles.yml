@@ -1,19 +1,15 @@
-# Add SVG icon relative path for CSS
-
 - name: GitHub
   link: https://github.com/franthormel/
-  description: "GitHub is where I showcase my works and you could see more of my activity here."
+  description: "GitHub is where I progress most of my works and you could see more of my activity here."
 
 - name: Dribbble
   link: https://dribbble.com/denmind
-  description: "I have a growing interest in the field of design which is why I have decided to use Dribbble to occasionally showcase what I have recently created."
-# - name: Behance
-#   link: https://www.behance.net/denmind
-# - name: GoodReads
-#   link: https://goodreads.com/franthormel
-# - name: LetterBoxd
-#   link: https://letterboxd.com/denmind/
-# - name: Medium
-#   link: https://medium.com/@franthormel
-# - name: Figma
-#   link: https://figma.com/@franthormel
+  description: "This is where I showcase designs that I have recently created."
+
+- name: GoodReads
+  link: https://goodreads.com/franthormel
+  description: "List of books that I have read."
+
+- name: LetterBoxd
+  link: https://letterboxd.com/denmind/
+  description: "List of films that I have watched."
