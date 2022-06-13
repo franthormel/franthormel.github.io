@@ -2,6 +2,10 @@ baseurl: ""
 url: ""
 
 email: fcaboyo@gmail.com
+name: Francis Anthony Carmel
+designation: Designer Developer
+tagline: Loving what you do, doing what you love
+contact_label: Get in touch
 
 defaults:
   - scope:

@@ -5,11 +5,3 @@
 - name: Dribbble
   link: https://dribbble.com/denmind
   description: "This is where I showcase designs that I have recently created."
-
-- name: GoodReads
-  link: https://goodreads.com/franthormel
-  description: "List of books that I have read."
-
-- name: LetterBoxd
-  link: https://letterboxd.com/denmind/
-  description: "List of films that I have watched."

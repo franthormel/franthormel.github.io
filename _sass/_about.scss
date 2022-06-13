@@ -1,0 +1,53 @@
+.about {
+  @include padding-content;
+
+  &__ {
+    &me {
+      padding: 0 20vw 5vh;
+    }
+
+    &header {
+      font-size: x-large;
+      font-weight: 600;
+    }
+
+    &body {
+      font-size: larger;
+      text-align: justify;
+    }
+
+    &social {
+      display: grid;
+      gap: 3vw;
+      grid-auto-rows: minmax(auto, auto);
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 20vw;
+
+      &__ {
+        &item {
+          font-size: larger;
+          font-weight: 600;
+          padding: 4vh;
+
+          @include border;
+          @include transition-box-shadow;
+        }
+
+        &logo {
+          $size: 35px;
+
+          display: block;
+          height: $size;
+          padding-bottom: 3vh;
+          width: $size;
+        }
+
+        &text {
+          font-size: medium;
+          font-weight: 400;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
