@@ -5,6 +5,7 @@
 
 // SASS variables
 $border: 1px solid var(--color-primary);
+$transition-duration: 200ms;
 
 // SASS mixins
 @mixin padding-content {
@@ -15,18 +16,10 @@ $border: 1px solid var(--color-primary);
   border: $border;
 }
 
-@mixin transition($name) {
-  @if $name {
-    transition: $name 200ms;
-  } @else {
-    @warn "Transition name is required.";
-  }
-}
-
 @mixin transition-box-shadow {
-  $value: 6px;
+  $value: 5px;
 
-  @include transition(box-shadow);
+  transition: box-shadow $transition-duration;
 
   &:hover {
     box-shadow: $value $value 0 var(--color-primary);
@@ -34,8 +27,7 @@ $border: 1px solid var(--color-primary);
 }
 
 @mixin link-hover() {
-  @include transition(background-color);
-  @include transition(color);
+  transition: background-color $transition-duration, color $transition-duration;
 
   &:hover {
     background-color: var(--color-primary);
