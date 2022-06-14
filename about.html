@@ -24,8 +24,8 @@ title: About
   </div>
   <div class="about__social">
     {% for social_profile in site.data.social_profiles %}
-    <a href="{{ social_profile.link }}" target="_blank">
-      <div class="about__social__item">
+    <div class="about__social__item">
+      <a href="{{ social_profile.link }}" target="_blank">
         <img
           class="about__social__logo"
           src="assets/svg/brand-{{ social_profile.name | downcase }}.svg"
@@ -34,8 +34,8 @@ title: About
           {{ social_profile.name | capitalize }}
         </header>
         <p class="about__social__text">{{ social_profile.description }}</p>
-      </div>
-    </a>
+      </a>
+    </div>
     {% endfor %}
   </div>
 </main>
