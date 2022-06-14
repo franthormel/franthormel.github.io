@@ -7,7 +7,7 @@ title: Works
     {% for work in site.data.works %}
     <div class="works__item">
       <a href="{{ work.url }}" target="_blank">
-        <header class="works__item__name">{{ work.name }}</header>
+        <h3 class="works__item__name">{{ work.name }}</h3>
         <p class="works__item__category">{{ work.category }}</p>
         <img class="works__item__img" src="assets/img/{{ work.img }}" />
       </a>

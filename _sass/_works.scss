@@ -1,5 +1,5 @@
 .works {
-  @include padding-content;
+  @include padding-content-large;
 
   &__ {
     &items {
@@ -13,10 +13,8 @@
       @include transition-box-shadow;
 
       &__ {
-        &name {
-        }
-
         &category {
+          font-size: large;
         }
 
         &img {

@@ -18,7 +18,6 @@ $transition-duration: 200ms;
   gap: 3vw;
   grid-auto-rows: minmax(auto, auto);
   grid-template-columns: repeat(2, 1fr);
-  padding: 0 20vw;
 }
 
 @mixin link-hover {
@@ -32,6 +31,10 @@ $transition-duration: 200ms;
 
 @mixin padding-content {
   padding: 10vh 5vw;
+}
+
+@mixin padding-content-large {
+  padding: 10vh 25vw;
 }
 
 @mixin transition-box-shadow {

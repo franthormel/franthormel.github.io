@@ -4,7 +4,7 @@ title: About
 
 <main class="about">
   <div class="about__me">
-    <header class="about__header">How are you?</header>
+    <h2 class="about__header">How are you?</h2>
     <p class="about__body">
       I have been focusing on strengthening my skills to improve my work. That
       involves web development, mobile applications, design, and user
@@ -30,9 +30,9 @@ title: About
           class="about__social__logo"
           src="assets/svg/brand-{{ social_profile.name | downcase }}.svg"
         />
-        <header class="about__social__header">
+        <h3 class="about__social__header">
           {{ social_profile.name | capitalize }}
-        </header>
+        </h3>
         <p class="about__social__text">{{ social_profile.description }}</p>
       </a>
     </div>
