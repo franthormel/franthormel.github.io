@@ -2,4 +2,11 @@
 title: Works
 ---
 
-{% include placeholder.html emote="(ヘ･_･)ヘ┳━┳" text="Works in progress." %}
+{% for work in site.data.works %}
+<section>
+  <p>{{ work.name }}</p>
+  <p>{{ work.category }}</p>
+  <a href="{{ work.url }}" target="_blank">LINK</a>
+  <img src="assets/img/{{ work.img }}" />
+</section>
+{% endfor %}
