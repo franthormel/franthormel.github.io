@@ -7,12 +7,10 @@
     }
 
     &item {
-        font-size: larger;
-        font-weight: 600;
-        padding: 4vh;
+      padding: 4vh;
 
-        @include border;
-        @include transition-box-shadow;
+      @include border;
+      @include transition-box-shadow;
 
       &__ {
         &name {

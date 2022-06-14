@@ -5,13 +5,13 @@ title: Works
 <main class="works">
   <div class="works_items">
     {% for work in site.data.works %}
-    <a href="{{ work.url }}" target="_blank">
-      <div class="works__item">
-        <p class="works__item__name">{{ work.name }}</p>
+    <div class="works__item">
+      <a href="{{ work.url }}" target="_blank">
+        <header class="works__item__name">{{ work.name }}</header>
         <p class="works__item__category">{{ work.category }}</p>
         <img class="works__item__img" src="assets/img/{{ work.img }}" />
-      </div>
-    </a>
+      </a>
+    </div>
     {% endfor %}
   </div>
 </main>
