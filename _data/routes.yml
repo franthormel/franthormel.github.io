@@ -1,6 +1,11 @@
+# Navigation bar items' name and links.
+# - name:
+#   link:
 - name: works
   link: /works.html
+
 - name: about
   link: /about.html
+
 - name: articles
   link: /articles.html
