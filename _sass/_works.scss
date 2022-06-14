@@ -1,0 +1,32 @@
+.works {
+  @include padding-content;
+
+  &__ {
+    &items {
+      @include grid-by-2;
+    }
+
+    &item {
+        font-size: larger;
+        font-weight: 600;
+        padding: 4vh;
+
+        @include border;
+        @include transition-box-shadow;
+
+      &__ {
+        &name {
+        }
+
+        &category {
+        }
+
+        &img {
+          display: block;
+          height: 100px;
+          width: 100px;
+        }
+      }
+    }
+  }
+}

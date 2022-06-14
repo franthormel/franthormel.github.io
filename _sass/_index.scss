@@ -8,12 +8,30 @@ $border: 1px solid var(--color-primary);
 $transition-duration: 200ms;
 
 // SASS mixins
-@mixin padding-content {
-  padding: 10vh 5vw;
-}
 
 @mixin border {
   border: $border;
+}
+
+@mixin grid-by-2 {
+  display: grid;
+  gap: 3vw;
+  grid-auto-rows: minmax(auto, auto);
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 20vw;
+}
+
+@mixin link-hover {
+  transition: background-color $transition-duration, color $transition-duration;
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+  }
+}
+
+@mixin padding-content {
+  padding: 10vh 5vw;
 }
 
 @mixin transition-box-shadow {
@@ -23,15 +41,6 @@ $transition-duration: 200ms;
 
   &:hover {
     box-shadow: $value $value 0 var(--color-primary);
-  }
-}
-
-@mixin link-hover() {
-  transition: background-color $transition-duration, color $transition-duration;
-
-  &:hover {
-    background-color: var(--color-primary);
-    color: var(--color-accent);
   }
 }
 

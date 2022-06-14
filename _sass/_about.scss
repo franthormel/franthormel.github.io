@@ -17,16 +17,10 @@
     }
 
     &social {
-      display: grid;
-      gap: 3vw;
-      grid-auto-rows: minmax(auto, auto);
-      grid-template-columns: repeat(2, 1fr);
-      padding: 0 20vw;
+      @include grid-by-2;
 
       &__ {
         &item {
-          font-size: larger;
-          font-weight: 600;
           padding: 4vh;
 
           @include border;
@@ -40,6 +34,11 @@
           height: $size;
           padding-bottom: 3vh;
           width: $size;
+        }
+
+        &header {
+          font-size: larger;
+          font-weight: 600;
         }
 
         &text {

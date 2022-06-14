@@ -30,7 +30,9 @@ title: About
           class="about__social__logo"
           src="assets/svg/brand-{{ social_profile.name | downcase }}.svg"
         />
-        <header>{{ social_profile.name | capitalize }}</header>
+        <header class="about__social__header">
+          {{ social_profile.name | capitalize }}
+        </header>
         <p class="about__social__text">{{ social_profile.description }}</p>
       </div>
     </a>
