@@ -1,0 +1,21 @@
+# Works and projects to showcase.
+# Image file must be placed at `assets\img` dir.
+# - name:
+#   url:
+#   category:
+#   img:
+
+- name: Bon Appétit Demo
+  url: https://github.com/franthormel/bon_appetit
+  category: Design & Development
+  img: random.jpg
+
+- name: Caster
+  url: https://github.com/franthormel/caster
+  category: Design & Development
+  img: random.jpg
+
+- name: Sealpass
+  url: https://github.com/franthormel/sealpass
+  category: Design & Development
+  img: random.jpg
