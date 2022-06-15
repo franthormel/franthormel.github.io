@@ -6,12 +6,6 @@
   margin-bottom: 64px;
 }
 
-.works__featured__img {
-  height: 500px;
-  object-fit: cover;
-  width: 100%;
-}
-
 .works__others {
   box-sizing: border-box;
   display: grid;
@@ -20,6 +14,7 @@
 }
 
 .works__item__img {
+  height: 500px;
   object-fit: cover;
   width: 100%;
 }
