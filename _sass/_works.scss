@@ -1,11 +1,8 @@
 .works {
-  @include padding-content-large;
+  @include padding-content;
+  @include grid-by-2;
 
   &__ {
-    &items {
-      @include grid-by-2;
-    }
-
     &item {
       padding: 4vh;
 
@@ -13,6 +10,10 @@
       @include transition-box-shadow;
 
       &__ {
+        &name {
+          margin: 0;
+        }
+
         &category {
           font-size: large;
         }
