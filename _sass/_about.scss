@@ -12,12 +12,15 @@
     }
 
     &social {
-      @include grid-by-2;
+      display: grid;
+      gap: 3vw;
+      grid-auto-rows: minmax(auto, auto);
+      grid-template-columns: repeat(2, auto);
       margin-top: 10vh;
 
       &__ {
         &item {
-          padding: 4vh;
+          padding: $border-content-padding;
 
           @include border;
           @include transition-box-shadow;

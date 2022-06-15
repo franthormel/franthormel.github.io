@@ -1,27 +1,34 @@
 .works {
-  @include padding-content;
-  @include grid-by-2;
+  @include padding-content-large;
+
+  display: grid;
+  gap: 10vh;
 
   &__ {
     &item {
-      padding: 4vh;
-
       @include border;
       @include transition-box-shadow;
 
       &__ {
-        &name {
-          margin: 0;
-        }
+        &text {
+          padding: $border-content-padding;
+          display: flex;
+          justify-content: space-between;
 
-        &category {
-          font-size: large;
+          &__ {
+            &name {
+              font-size: 24px;
+            }
+
+            &category {
+              font-size: 24px;
+            }
+          }
         }
 
         &img {
-          display: block;
-          height: 100px;
-          width: 100px;
+          width: 100%;
+          object-fit: cover;
         }
       }
     }
