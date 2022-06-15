@@ -3,34 +3,29 @@
 
   display: grid;
   gap: 10vh;
+}
 
-  &__ {
-    &item {
-      @include border;
-      @include transition-box-shadow;
+.works__item {
+  @include border;
+  @include transition-box-shadow;
+}
 
-      &__ {
-        &text {
-          padding: $border-content-padding;
-          display: flex;
-          justify-content: space-between;
+.works__item__img {
+  width: 100%;
+  object-fit: cover;
+}
 
-          &__ {
-            &name {
-              font-size: 24px;
-            }
+.works__item__text {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
 
-            &category {
-              font-size: 24px;
-            }
-          }
-        }
+.works__item__text__name {
+  font-weight: 600;
+  font-size: 24px;
+}
 
-        &img {
-          width: 100%;
-          object-fit: cover;
-        }
-      }
-    }
-  }
+.works__item__text__category {
+  font-size: 24px;
 }
