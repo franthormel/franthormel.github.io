@@ -27,6 +27,10 @@ $border-content-padding: 4vh;
   padding: 10vh 5vw;
 }
 
+@mixin padding-content-medium {
+  padding: 5%;
+}
+
 @mixin padding-content-large {
   padding: 10vh 25vw;
 }

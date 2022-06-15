@@ -1,13 +1,10 @@
 .works {
-  @include padding-content-large;
+  @include padding-content-medium;
 
+  box-sizing: border-box;
   display: grid;
-  gap: 10vh;
-}
-
-.works__item {
-  @include border;
-  @include transition-box-shadow;
+  gap: 64px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .works__item__img {
@@ -16,16 +13,17 @@
 }
 
 .works__item__text {
-  margin: 20px;
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .works__item__text__name {
-  font-weight: 600;
   font-size: 24px;
+  font-weight: 500;
 }
 
 .works__item__text__category {
   font-size: 24px;
+  font-weight: 300;
 }
