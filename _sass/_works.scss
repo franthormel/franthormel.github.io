@@ -1,15 +1,27 @@
 .works {
   @include padding-content-medium;
+}
 
+.works__featured {
+  margin-bottom: 64px;
+}
+
+.works__featured__img {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.works__others {
   box-sizing: border-box;
   display: grid;
   gap: 64px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .works__item__img {
-  width: 100%;
   object-fit: cover;
+  width: 100%;
 }
 
 .works__item__text {

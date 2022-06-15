@@ -3,15 +3,33 @@ title: Works
 ---
 
 <main class="works">
-  {% for work in site.data.works %}
-  <div class="works__item">
-    <a href="{{ work.url }}" target="_blank">
-      <img class="works__item__img" src="assets/img/{{ work.img }}" />
+  <div class="works__featured">
+    <a href="{{ site.featured_project.url }}" target="_blank">
+      <img
+        class="works__featured__img"
+        src="assets/img/{{ site.featured_project.img }}"
+      />
       <section class="works__item__text">
-        <span class="works__item__text__name">{{ work.name }}</span>
-        <span class="works__item__text__category">{{ work.category }}</span>
+        <span class="works__item__text__name">
+          {{ site.featured_project.name }}
+        </span>
+        <span class="works__item__text__category">
+          {{ site.featured_project.category }}
+        </span>
       </section>
     </a>
   </div>
-  {% endfor %}
+  <div class="works__others">
+    {% for work in site.data.works %}
+    <div class="works__item">
+      <a href="{{ work.url }}" target="_blank">
+        <img class="works__item__img" src="assets/img/{{ work.img }}" />
+        <section class="works__item__text">
+          <span class="works__item__text__name">{{ work.name }}</span>
+          <span class="works__item__text__category">{{ work.category }}</span>
+        </section>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
 </main>
