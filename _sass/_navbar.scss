@@ -1,0 +1,19 @@
+.navbar {
+  border-bottom: $border;
+  display: flex;
+  justify-content: space-between;
+  padding: 5vh 5vw;
+}
+
+.navbar__logo {
+  height: 50px;
+  width: 50px;
+}
+
+.navbar__item {
+  font-size: x-large;
+  margin-left: 1vw;
+  padding: 1vh 1vw;
+
+  @include link-hover;
+}

@@ -1,13 +1,7 @@
-// This file should contain all definitions that must be on top like:
-// - SASS mixins and variables
-// - @font-faces, and
-// - native HTML tag selectors.
+// Definitions only: SASS mixins, custom fonts, and native selectors.
 
-// SASS variables
 $border: 1px solid var(--color-primary);
 $border-content-padding: 4vh;
-
-// SASS mixins
 
 @mixin border {
   border: $border;

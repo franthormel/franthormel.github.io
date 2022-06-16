@@ -21,24 +21,26 @@
       {% if page.title %} {{ page.title | capitalize }} {% else %} Franthormel
       {% endif %}
     </title>
-    <link rel="icon" href="assets/logo-light.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="assets/img/svg/logo-light.svg"
+      type="image/svg+xml"
+    />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-  <body class="body">
-    <nav class="body__navbar">
+  <body>
+    <nav class="navbar">
       <a href="/">
         <img
-          class="body__navbar__logo"
-          src="assets/logo-dark.svg"
+          class="navbar__logo"
+          src="assets/img/svg/logo-dark.svg"
           aria-label="Franthormel"
           alt="Franthormel"
         />
       </a>
       <aside>
         {% for route in site.data.routes %}
-        <a class="body__navbar__item" href="{{ route.link }}">
-          {{ route.name }}
-        </a>
+        <a class="navbar__item" href="{{ route.link }}"> {{ route.name }} </a>
         {% endfor %}
       </aside>
     </nav>
