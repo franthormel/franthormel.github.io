@@ -6,14 +6,33 @@
 // SASS variables
 $border: 1px solid var(--color-primary);
 $transition-duration: 200ms;
+$border-content-padding: 4vh;
 
 // SASS mixins
+
+@mixin border {
+  border: $border;
+}
+
+@mixin link-hover {
+  transition: background-color $transition-duration, color $transition-duration;
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+  }
+}
+
 @mixin padding-content {
   padding: 10vh 5vw;
 }
 
-@mixin border {
-  border: $border;
+@mixin padding-content-medium {
+  padding: 10vh 15vw;
+}
+
+@mixin padding-content-large {
+  padding: 10vh 25vw;
 }
 
 @mixin transition-box-shadow {
@@ -23,15 +42,6 @@ $transition-duration: 200ms;
 
   &:hover {
     box-shadow: $value $value 0 var(--color-primary);
-  }
-}
-
-@mixin link-hover() {
-  transition: background-color $transition-duration, color $transition-duration;
-
-  &:hover {
-    background-color: var(--color-primary);
-    color: var(--color-accent);
   }
 }
 

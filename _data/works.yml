@@ -1,0 +1,16 @@
+# Works and projects to showcase.
+# Image asset file must be placed at `assets\img` dir.
+# - name:
+#   url:
+#   category:
+#   img:
+
+- name: Caster
+  url: https://github.com/franthormel/caster
+  category: Design & Development
+  img: works/caster.jpg
+
+- name: Sealpass
+  url: https://github.com/franthormel/sealpass
+  category: Design & Development
+  img: works/sealpass.jpg

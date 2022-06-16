@@ -1,0 +1,36 @@
+.works {
+  @include padding-content-medium;
+}
+
+.work__featured {
+  margin-bottom: 64px;
+}
+
+.works__others {
+  box-sizing: border-box;
+  display: grid;
+  gap: 64px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.work__item__img {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.work__item__text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.work__item__text__name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.work__item__text__category {
+  font-size: 24px;
+  font-weight: 300;
+}

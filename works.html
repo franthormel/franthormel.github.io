@@ -2,4 +2,32 @@
 title: Works
 ---
 
-{% include placeholder.html emote="(ヘ･_･)ヘ┳━┳" text="Works in progress." %}
+<main class="works">
+  <div class="work__featured">
+    <a href="{{ site.featured_work.url }}" target="_blank">
+      <img
+        class="work__item__img"
+        src="assets/img/{{ site.featured_work.img }}"
+      />
+      <section class="work__item__text">
+        <span class="work__item__text__name">
+          {{ site.featured_work.name }}
+        </span>
+        <span class="work__item__text__category">
+          {{ site.featured_work.category }}
+        </span>
+      </section>
+    </a>
+  </div>
+  <div class="works__others">
+    {% for work in site.data.works %}
+    <a href="{{ work.url }}" target="_blank">
+      <img class="work__item__img" src="assets/img/{{ work.img }}" />
+      <section class="work__item__text">
+        <span class="work__item__text__name">{{ work.name }}</span>
+        <span class="work__item__text__category">{{ work.category }}</span>
+      </section>
+    </a>
+    {% endfor %}
+  </div>
+</main>

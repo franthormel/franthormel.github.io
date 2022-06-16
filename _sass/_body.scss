@@ -1,10 +1,4 @@
 .body {
-  display: flex;
-  flex-flow: column;
-  height: 85%;
-
-  @include padding-content;
-
   &__ {
     &navbar {
       border-bottom: $border;
