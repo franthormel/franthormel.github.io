@@ -7,15 +7,15 @@ designation: Designer Developer
 tagline: Loving what you do, doing what you love
 contact_label: Get in touch
 
-# Project that you want to feature.
+# Work that you want to feature.
 # Will be displayed larger than the others
-# Note, once this project is no longer the latest but you still
+# Note, once this work is no longer the latest but you still
 # wish to display it with the rest, move it to `_data\works.yml` at the top.
-featured_project:
+featured_work:
   name: Bon Appétit Demo
   url: https://github.com/franthormel/bon_appetit
   category: Design & Development
-  img: random/1.jpg
+  img: works/bon_appetit_demo.jpg
 
 defaults:
   - scope:
