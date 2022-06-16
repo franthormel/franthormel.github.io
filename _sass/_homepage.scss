@@ -4,7 +4,7 @@
 
 .homepage__text {
   display: block;
-  font-size: 65px;
+  font-size: 4rem;
   font-weight: 600;
 }
 
@@ -12,14 +12,15 @@
   display: block;
   font-size: x-large;
   font-style: italic;
-  padding: 5vh 0;
+  padding: 1.5em 0;
 }
 
 .homepage__contact {
+  border: var(--border);
   float: left;
-  font-size: larger;
-  padding: 2vh;
+  font-size: large;
+  margin-bottom: 3em;
+  padding: 1em;
 
-  @include border;
   @include link-hover;
 }

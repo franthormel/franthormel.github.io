@@ -1,19 +1,20 @@
 .navbar {
-  border-bottom: $border;
+  border-bottom: var(--border);
   display: flex;
   justify-content: space-between;
-  padding: 5vh 5vw;
+  padding: 2em 5em;
 }
 
 .navbar__logo {
-  height: 50px;
-  width: 50px;
+  height: 3em;
+  max-width: 100%;
+  width: 3em;
 }
 
 .navbar__item {
   font-size: x-large;
-  margin-left: 1vw;
-  padding: 1vh 1vw;
+  margin-left: 1em;
+  padding: 0.5rem 1rem;
 
   @include link-hover;
 }

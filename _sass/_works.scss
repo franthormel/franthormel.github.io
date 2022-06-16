@@ -3,22 +3,22 @@
 }
 
 .work__featured {
-  margin-bottom: 64px;
+  margin-bottom: 5em;
 }
 
 .works__others {
   box-sizing: border-box;
   display: grid;
-  gap: 64px;
+  gap: 5em;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .work__item__img {
+  border: var(--border);
   height: 500px;
+  max-width: 100%;
   object-fit: cover;
   width: 100%;
-
-  @include border;
 }
 
 .work__item__text {
