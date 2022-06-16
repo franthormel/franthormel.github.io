@@ -1,46 +1,41 @@
 .about {
   @include padding-content-large;
+}
 
-  &__ {
-    &header {
-      margin: 0;
-    }
+.about__header {
+  margin: 0;
+}
 
-    &body {
-      font-size: larger;
-      text-align: justify;
-    }
+.about__body {
+  font-size: larger;
+  text-align: justify;
+}
 
-    &social {
-      display: grid;
-      gap: 3vw;
-      grid-auto-rows: minmax(auto, auto);
-      grid-template-columns: repeat(2, auto);
-      margin-top: 10vh;
+.about__social {
+  display: grid;
+  gap: 3vw;
+  grid-auto-rows: minmax(auto, auto);
+  grid-template-columns: repeat(2, auto);
+  margin-top: 10vh;
+}
 
-      &__ {
-        &item {
-          padding: $border-content-padding;
+.about__social__item {
+  padding: $border-content-padding;
 
-          @include border;
-          @include transition-box-shadow;
-        }
+  @include border;
+}
 
-        &logo {
-          $size: 35px;
+.about__social__logo {
+  $size: 35px;
 
-          display: block;
-          height: $size;
-          padding-bottom: 3vh;
-          width: $size;
-        }
+  display: block;
+  height: $size;
+  padding-bottom: 3vh;
+  width: $size;
+}
 
-        &text {
-          font-size: medium;
-          font-weight: 400;
-          text-align: justify;
-        }
-      }
-    }
-  }
+.about__social__text {
+  font-size: medium;
+  font-weight: 400;
+  text-align: justify;
 }

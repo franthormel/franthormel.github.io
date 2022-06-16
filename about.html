@@ -23,17 +23,15 @@ title: About
     <p class="about__body">Hope we can meet again!</p>
   </div>
   <div class="about__social">
-    {% for social_profile in site.data.social_profiles %}
+    {% for profile in site.data.social_profiles %}
     <div class="about__social__item">
-      <a href="{{ social_profile.link }}" target="_blank">
+      <a href="{{ profile.link }}" target="_blank">
         <img
           class="about__social__logo"
-          src="assets/svg/brand-{{ social_profile.name | downcase }}.svg"
+          src="assets/svg/brand-{{ profile.name | downcase }}.svg"
         />
-        <h3 class="about__social__header">
-          {{ social_profile.name | capitalize }}
-        </h3>
-        <p class="about__social__text">{{ social_profile.description }}</p>
+        <h3 class="about__social__header">{{ profile.name | capitalize }}</h3>
+        <p class="about__social__text">{{ profile.description }}</p>
       </a>
     </div>
     {% endfor %}

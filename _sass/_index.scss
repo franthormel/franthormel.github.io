@@ -5,7 +5,6 @@
 
 // SASS variables
 $border: 1px solid var(--color-primary);
-$transition-duration: 200ms;
 $border-content-padding: 4vh;
 
 // SASS mixins
@@ -15,7 +14,7 @@ $border-content-padding: 4vh;
 }
 
 @mixin link-hover {
-  transition: background-color $transition-duration, color $transition-duration;
+  transition: 250ms cubic-bezier(0.75, 0.46, 0.52, 0.85);
 
   &:hover {
     background-color: var(--color-primary);
@@ -35,28 +34,11 @@ $border-content-padding: 4vh;
   padding: 10vh 25vw;
 }
 
-@mixin transition-box-shadow {
-  $value: 5px;
-
-  transition: box-shadow $transition-duration;
-
-  &:hover {
-    box-shadow: $value $value 0 var(--color-primary);
-  }
-}
-
-// Custom fonts
-@font-face {
-  font-family: "Libre Barcode 39 Extended Text";
-  src: url("/assets/fonts/LibreBarcode39ExtendedText.ttf");
-}
-
 @font-face {
   font-family: "Readex Pro";
   src: url("/assets/fonts/ReadexPro.ttf");
 }
 
-// Root definitions
 :root {
   --color-primary: #110903;
   --color-accent: #f6dd28;
@@ -69,20 +51,18 @@ $border-content-padding: 4vh;
   font-family: "Readex Pro";
   height: 100%;
 
-  ::selection,
-  ::-moz-selection {
+  ::selection {
     color: var(--color-accent);
     background-color: var(--color-primary);
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
   }
 }
 
 a {
-  cursor: pointer;
   text-decoration: none;
   color: var(--color-primary);
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
