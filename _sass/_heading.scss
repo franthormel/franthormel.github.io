@@ -1,21 +1,17 @@
-.homepage {
-  @include padding-content;
-}
-
-.homepage__text {
+.heading__text {
   display: block;
   font-size: 4rem;
   font-weight: 600;
 }
 
-.homepage__tagline {
+.heading__tagline {
   display: block;
   font-size: x-large;
   font-style: italic;
   padding: 1.5em 0;
 }
 
-.homepage__contact {
+.heading__contact {
   border: var(--border);
   float: left;
   font-size: large;

@@ -29,21 +29,6 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <a href="/">
-        <img
-          class="navbar__logo"
-          src="assets/img/svg/logo-dark.svg"
-          aria-label="Franthormel"
-          alt="Franthormel"
-        />
-      </a>
-      <aside>
-        {% for route in site.data.routes %}
-        <a class="navbar__item" href="{{ route.link }}"> {{ route.name }} </a>
-        {% endfor %}
-      </aside>
-    </nav>
-    {{ content }}
+    {% include navbar.html %} {{ content }}
   </body>
 </html>
