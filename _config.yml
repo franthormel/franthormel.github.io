@@ -1,14 +1,30 @@
 baseurl: ""
 url: ""
 
+# Email to be used by the contact button
 email: fcaboyo@gmail.com
+
+# Name of website owner
 name: Francis Anthony Carmel
+
+# Profession or qualification
 designation: Designer Developer
+
+# Personal choice of quote
 tagline: Loving what you do, doing what you love
+
+# Contact button text
 contact_label: Get in touch
+
+# Default website title
+title: Franthormel
 
 defaults:
   - scope:
       path: ""
     values:
       layout: "default"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
