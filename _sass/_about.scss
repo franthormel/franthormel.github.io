@@ -9,7 +9,7 @@
 
 .about__social {
   display: grid;
-  gap: 5%;
+  gap: 3%;
   grid-auto-rows: minmax(auto, auto);
   grid-template-columns: repeat(3, auto);
   margin-top: 5%;
@@ -28,7 +28,6 @@
 .about__social__logo {
   display: block;
   height: 2rem;
-  padding-bottom: 3vh;
   width: 2rem;
 }
 
