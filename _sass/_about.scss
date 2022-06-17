@@ -14,13 +14,9 @@
 .about__social {
   display: grid;
   gap: 3%;
-  grid-auto-rows: minmax(auto, auto);
-  grid-template-columns: repeat(3, auto);
   margin-top: 5%;
 
-  @media screen and (max-width: 680px) {
-    grid-template-columns: repeat(1, auto);
-  }
+  @include media-grid-columns($cols: 3, $max-width: 680px);
 }
 
 .about__social__item {
