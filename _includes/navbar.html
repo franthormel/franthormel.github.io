@@ -7,9 +7,9 @@
       alt="Franthormel"
     />
   </a>
-  <aside>
+  <aside class="navbar__links">
     {% for route in site.data.routes %}
-    <a class="navbar__item" href="{{ route.link }}"> {{ route.name }} </a>
+    <a class="navbar__link" href="{{ route.link }}"> {{ route.name }} </a>
     {% endfor %}
   </aside>
 </nav>

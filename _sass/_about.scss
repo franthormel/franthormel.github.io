@@ -7,6 +7,10 @@
   text-align: justify;
 }
 
+.about__header {
+  margin: 0;
+}
+
 .about__social {
   display: grid;
   gap: 3%;
@@ -20,9 +24,9 @@
 }
 
 .about__social__item {
+  border: var(--border);
   padding: 9%;
   margin: 0;
-  @include border;
 }
 
 .about__social__logo {

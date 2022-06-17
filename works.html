@@ -8,6 +8,7 @@ title: Works
       <img
         class="work__item__img"
         src="assets/img/{{ site.featured_work.img }}"
+        alt="{{ site.featured_work.name }} banner image"
       />
       <div class="work__item__text">
         <span class="work__item__text__name">
@@ -22,7 +23,11 @@ title: Works
   <div class="works__others">
     {% for work in site.data.works %}
     <a href="{{ work.url }}" target="_blank">
-      <img class="work__item__img" src="assets/img/{{ work.img }}" />
+      <img
+        class="work__item__img"
+        src="assets/img/{{ work.img }}"
+        alt="{{ work.name }} banner image"
+      />
       <div class="work__item__text">
         <span class="work__item__text__name">{{ work.name }}</span>
         <span class="work__item__text__category">{{ work.category }}</span>

@@ -1,11 +1,4 @@
-// Definitions only: SASS mixins, custom fonts, and native selectors.
-
-$border: 1px solid var(--color-primary);
-
-@mixin border {
-  border: $border;
-}
-
+// Definitions only: SASS mixins, custom font, and native selectors.
 @mixin layout {
   margin: 0 auto;
   width: 80%;
@@ -32,6 +25,7 @@ $border: 1px solid var(--color-primary);
   --color-error: #ed0312;
   --color-tertiary: #3b28b8;
   --color-offset: #f4fffd;
+  --border: 1px solid var(--color-primary);
 
   background-color: var(--color-accent);
   color: var(--color-primary);

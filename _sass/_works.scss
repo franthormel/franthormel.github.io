@@ -14,11 +14,10 @@
 }
 
 .work__item__img {
+  border: var(--border);
   height: 500px;
   object-fit: cover;
   width: 100%;
-
-  @include border;
 }
 
 .work__item__text {
