@@ -1,7 +1,6 @@
 // Definitions only: SASS mixins, custom fonts, and native selectors.
 
 $border: 1px solid var(--color-primary);
-$border-content-padding: 4vh;
 
 @mixin border {
   border: $border;
@@ -9,8 +8,8 @@ $border-content-padding: 4vh;
 
 @mixin layout {
   margin: 0 auto;
+  width: 80%;
   padding: 5% 0;
-  width: 90%;
 }
 
 @mixin link-hover {

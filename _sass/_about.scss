@@ -2,10 +2,6 @@
   @include layout;
 }
 
-.about__header {
-  margin: 0;
-}
-
 .about__body {
   font-size: larger;
   text-align: justify;
@@ -13,29 +9,31 @@
 
 .about__social {
   display: grid;
-  gap: 3vw;
+  gap: 5%;
   grid-auto-rows: minmax(auto, auto);
   grid-template-columns: repeat(3, auto);
-  margin-top: 10vh;
+  margin-top: 5%;
+
+  @media screen and (max-width: 680px) {
+    grid-template-columns: repeat(1, auto);
+  }
 }
 
 .about__social__item {
-  padding: $border-content-padding;
-
+  padding: 9%;
+  margin: 0;
   @include border;
 }
 
 .about__social__logo {
-  $size: 35px;
-
   display: block;
-  height: $size;
+  height: 2rem;
   padding-bottom: 3vh;
-  width: $size;
+  width: 2rem;
 }
 
 .about__social__text {
-  font-size: medium;
+  font-size: large;
   font-weight: 400;
   text-align: justify;
 }
