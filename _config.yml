@@ -1,24 +1,30 @@
 baseurl: ""
 url: ""
 
+# Email to be used by the contact button
 email: fcaboyo@gmail.com
+
+# Name of website owner
 name: Francis Anthony Carmel
+
+# Profession or qualification
 designation: Designer Developer
+
+# Personal choice of quote
 tagline: Loving what you do, doing what you love
+
+# Contact button text
 contact_label: Get in touch
 
-# Work that you want to feature.
-# Will be displayed larger than the others
-# Note, once this work is no longer the latest but you still
-# wish to display it with the rest, move it to `_data\works.yml` at the top.
-featured_work:
-  name: Bon Appétit Demo
-  url: https://github.com/franthormel/bon_appetit
-  category: Design & Development
-  img: works/bon_appetit_demo.jpg
+# Default website title
+title: Franthormel
 
 defaults:
   - scope:
       path: ""
     values:
       layout: "default"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

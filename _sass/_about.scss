@@ -1,46 +1,39 @@
 .about {
-  @include padding-content-large;
+  @include layout;
+}
 
-  &__ {
-    &header {
-      margin: 0;
-    }
+.about__body {
+  font-size: 1.2rem;
+  text-align: justify;
+}
 
-    &body {
-      font-size: larger;
-      text-align: justify;
-    }
+.about__header {
+  margin: 0;
+}
 
-    &social {
-      display: grid;
-      gap: 3vw;
-      grid-auto-rows: minmax(auto, auto);
-      grid-template-columns: repeat(2, auto);
-      margin-top: 10vh;
+.about__social {
+  display: grid;
+  gap: 3%;
+  margin-top: 5%;
 
-      &__ {
-        &item {
-          padding: $border-content-padding;
+  @include media-grid-columns($cols: 3, $max-width: 680px);
+}
 
-          @include border;
-          @include transition-box-shadow;
-        }
+.about__social__item {
+  border: var(--border);
+  padding: 9%;
+  margin: 0;
+}
 
-        &logo {
-          $size: 35px;
+.about__social__logo {
+  display: block;
+  height: 2rem;
+  max-width: 100%;
+  width: 2rem;
+}
 
-          display: block;
-          height: $size;
-          padding-bottom: 3vh;
-          width: $size;
-        }
-
-        &text {
-          font-size: medium;
-          font-weight: 400;
-          text-align: justify;
-        }
-      }
-    }
-  }
+.about__social__text {
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: justify;
 }

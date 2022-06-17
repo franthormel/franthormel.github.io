@@ -4,7 +4,7 @@ title: About
 
 <main class="about">
   <div class="about__me">
-    <h2 class="about__header">How are you?</h2>
+    <h2 class="about__header">Hi, how are you?</h2>
     <p class="about__body">
       I have been focusing on strengthening my skills to improve my work. That
       involves web development, mobile applications, design, and user
@@ -23,19 +23,18 @@ title: About
     <p class="about__body">Hope we can meet again!</p>
   </div>
   <div class="about__social">
-    {% for social_profile in site.data.social_profiles %}
-    <div class="about__social__item">
-      <a href="{{ social_profile.link }}" target="_blank">
+    {% for profile in site.data.social_profiles %}
+    <a href="{{ profile.link }}" target="_blank">
+      <div class="about__social__item">
         <img
           class="about__social__logo"
-          src="assets/svg/brand-{{ social_profile.name | downcase }}.svg"
+          src="assets/img/svg/brand-{{ profile.name | downcase }}.svg"
+          alt="{{ profile.name }} logo"
         />
-        <h3 class="about__social__header">
-          {{ social_profile.name | capitalize }}
-        </h3>
-        <p class="about__social__text">{{ social_profile.description }}</p>
-      </a>
-    </div>
+        <h3 class="about__social__header">{{ profile.name | capitalize }}</h3>
+        <p class="about__social__text">{{ profile.description }}</p>
+      </div>
+    </a>
     {% endfor %}
   </div>
 </main>

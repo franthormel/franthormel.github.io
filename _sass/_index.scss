@@ -1,62 +1,4 @@
-// This file should contain all definitions that must be on top like:
-// - SASS mixins and variables
-// - @font-faces, and
-// - native HTML tag selectors.
-
-// SASS variables
-$border: 1px solid var(--color-primary);
-$transition-duration: 200ms;
-$border-content-padding: 4vh;
-
-// SASS mixins
-
-@mixin border {
-  border: $border;
-}
-
-@mixin link-hover {
-  transition: background-color $transition-duration, color $transition-duration;
-
-  &:hover {
-    background-color: var(--color-primary);
-    color: var(--color-accent);
-  }
-}
-
-@mixin padding-content {
-  padding: 10vh 5vw;
-}
-
-@mixin padding-content-medium {
-  padding: 10vh 15vw;
-}
-
-@mixin padding-content-large {
-  padding: 10vh 25vw;
-}
-
-@mixin transition-box-shadow {
-  $value: 5px;
-
-  transition: box-shadow $transition-duration;
-
-  &:hover {
-    box-shadow: $value $value 0 var(--color-primary);
-  }
-}
-
-// Custom fonts
-@font-face {
-  font-family: "Libre Barcode 39 Extended Text";
-  src: url("/assets/fonts/LibreBarcode39ExtendedText.ttf");
-}
-
-@font-face {
-  font-family: "Readex Pro";
-  src: url("/assets/fonts/ReadexPro.ttf");
-}
-
-// Root definitions
+// Definitions only: native selectors, custom font, and SASS mixins.
 :root {
   --color-primary: #110903;
   --color-accent: #f6dd28;
@@ -64,25 +6,73 @@ $border-content-padding: 4vh;
   --color-tertiary: #3b28b8;
   --color-offset: #f4fffd;
 
+  --border: 1px solid var(--color-primary);
+
   background-color: var(--color-accent);
   color: var(--color-primary);
   font-family: "Readex Pro";
   height: 100%;
 
-  ::selection,
-  ::-moz-selection {
+  ::selection {
     color: var(--color-accent);
     background-color: var(--color-primary);
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
   }
 }
 
 a {
-  cursor: pointer;
   text-decoration: none;
   color: var(--color-primary);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin layout {
+  margin: 0 auto;
+  width: 80%;
+  padding: 5% 0;
+
+  @media all and (max-width: 700px) {
+    padding: 5vh 0;
+  }
+}
+
+@mixin link-hover {
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: 250ms cubic-bezier(0.75, 0.46, 0.52, 0.85);
+  }
+
+  @media screen and (prefers-reduced-motion) {
+    transition: none;
+  }
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+  }
+}
+
+@mixin media-grid-columns($cols, $max-width) {
+  grid-template-columns: repeat($cols, auto);
+
+  @media all and (max-width: $max-width) {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@mixin media-display-block($margin: false) {
+  @media all and (max-width: 600px) {
+    display: block;
+
+    @if $margin {
+      margin-top: 1%;
+    }
+  }
+}
+
+@font-face {
+  font-family: "Readex Pro";
+  src: url("/assets/fonts/ReadexPro.ttf");
 }

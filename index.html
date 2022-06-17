@@ -1,13 +1,13 @@
 ---
 ---
 
-<main class="homepage">
-  <span class="homepage__text">Hi, I'm {{ site.name }}.</span>
-  <span class="homepage__text">I'm a {{ site.designation }}.</span>
+<main class="heading">
+  <span class="heading__text">I'm {{ site.name }},</span>
+  <span class="heading__text">{{ site.designation }}.</span>
   {% if site.tagline %}
-  <span class="homepage__tagline">"{{ site.tagline }}"</span>
+  <p class="heading__tagline">"{{ site.tagline }}"</p>
   {% endif %}
-  <a class="homepage__contact" href="mailto:{{ site.email }}" target="_blank">
+  <a class="heading__contact" href="mailto:{{ site.email }}" target="_blank">
     {% if site.contact_label %} {{ site.contact_label | upcase }} {% else %}
     CONTACT ME {% endif %}
   </a>

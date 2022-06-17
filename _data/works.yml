@@ -1,9 +1,7 @@
-# Works and projects to showcase.
-# Image asset file must be placed at `assets\img` dir.
-# - name:
-#   url:
-#   category:
-#   img:
+- name: Bon Appétit Demo
+  url: https://github.com/franthormel/bon_appetit
+  category: Design & Development
+  img: works/bon_appetit_demo.jpg
 
 - name: Caster
   url: https://github.com/franthormel/caster
