@@ -16,18 +16,6 @@ $border-content-padding: 4vh;
   }
 }
 
-@mixin padding-content {
-  padding: 10vh 5vw;
-}
-
-@mixin padding-content-medium {
-  padding: 10vh 15vw;
-}
-
-@mixin padding-content-large {
-  padding: 10vh 25vw;
-}
-
 @font-face {
   font-family: "Readex Pro";
   src: url("/assets/fonts/ReadexPro.ttf");

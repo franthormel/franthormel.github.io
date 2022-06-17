@@ -1,2 +1,5 @@
+- name: works
+  link: /works.html
+
 - name: about
   link: /about.html
