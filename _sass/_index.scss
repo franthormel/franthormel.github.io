@@ -7,6 +7,12 @@ $border-content-padding: 4vh;
   border: $border;
 }
 
+@mixin layout {
+  margin: 0 auto;
+  padding: 5% 0;
+  width: 90%;
+}
+
 @mixin link-hover {
   transition: 250ms cubic-bezier(0.75, 0.46, 0.52, 0.85);
 

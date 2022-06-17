@@ -1,7 +1,11 @@
 - name: GitHub
   link: https://github.com/franthormel/
-  description: "GitHub is where I progress most of my works and you could see more of my activity here."
+  description: "I progress most of my works and activity here."
 
 - name: Dribbble
   link: https://dribbble.com/denmind
-  description: "This is where I showcase designs that I have recently created."
+  description: "I can showcase my recent works that I can draw inspiration and motivation from."
+
+- name: Goodreads
+  link: https://www.goodreads.com/franthormel
+  description: "I gain important lessons and new knowledge from my occasional reading of interesting materials."

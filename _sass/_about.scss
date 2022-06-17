@@ -1,3 +1,7 @@
+.about {
+  @include layout;
+}
+
 .about__header {
   margin: 0;
 }
@@ -11,7 +15,7 @@
   display: grid;
   gap: 3vw;
   grid-auto-rows: minmax(auto, auto);
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(3, auto);
   margin-top: 10vh;
 }
 

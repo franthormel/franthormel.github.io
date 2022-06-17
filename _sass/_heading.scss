@@ -1,3 +1,7 @@
+.heading {
+  @include layout;
+}
+
 .heading__text {
   display: block;
   font-size: 65px;

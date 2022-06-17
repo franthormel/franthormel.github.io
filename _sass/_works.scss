@@ -1,3 +1,7 @@
+.works {
+  @include layout;
+}
+
 .work__featured {
   margin-bottom: 64px;
 }
