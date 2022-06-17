@@ -2,18 +2,29 @@
   border-bottom: var(--border);
   display: flex;
   justify-content: space-between;
-  padding: 5vh 10%;
+  padding: 2rem 10%;
 }
 
 .navbar__logo {
-  height: 2.7rem;
+  height: 3rem;
   max-width: 100%;
-  width: 2.7rem;
+  width: 3rem;
+}
+
+.navbar__links {
+  display: flex;
+
+  :last-child {
+    margin-left: 5%;
+
+    @media screen and (min-width: 450px) {
+      margin-left: 10%;
+    }
+  }
 }
 
 .navbar__link {
   font-size: 1.5rem;
-  margin-left: 1.5rem;
   padding: 0.5rem 1rem;
 
   @include link-hover;
