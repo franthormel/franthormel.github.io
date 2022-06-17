@@ -7,31 +7,35 @@
 }
 
 .about__body {
-  font-size: 1.1rem;
+  font-size: larger;
   text-align: justify;
 }
 
 .about__social {
   display: grid;
-  gap: 3em;
+  gap: 3vw;
   grid-auto-rows: minmax(auto, auto);
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 3em;
+  grid-template-columns: repeat(2, auto);
+  margin-top: 10vh;
 }
 
 .about__social__item {
-  border: var(--border);
-  padding: 2em;
+  padding: $border-content-padding;
+
+  @include border;
 }
 
 .about__social__logo {
+  $size: 35px;
+
   display: block;
-  height: 2em;
-  max-width: 100%;
-  width: 2em;
+  height: $size;
+  padding-bottom: 3vh;
+  width: $size;
 }
 
 .about__social__text {
+  font-size: medium;
   font-weight: 400;
   text-align: justify;
 }

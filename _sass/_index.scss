@@ -1,31 +1,10 @@
 // Definitions only: SASS mixins, custom fonts, and native selectors.
-:root {
-  --color-primary: #110903;
-  --color-accent: #f6dd28;
-  --color-error: #ed0312;
-  --color-tertiary: #3b28b8;
-  --color-offset: #f4fffd;
 
-  --border: 1px solid var(--color-primary);
+$border: 1px solid var(--color-primary);
+$border-content-padding: 4vh;
 
-  background-color: var(--color-accent);
-  color: var(--color-primary);
-  font-family: "Readex Pro";
-  height: 100%;
-
-  ::selection {
-    background-color: var(--color-primary);
-    color: var(--color-accent);
-  }
-}
-
-a {
-  text-decoration: none;
-  color: var(--color-primary);
-}
-
-body {
-  margin: 5% 10%;
+@mixin border {
+  border: $border;
 }
 
 @mixin link-hover {
@@ -37,11 +16,47 @@ body {
   }
 }
 
+@mixin padding-content {
+  padding: 10vh 5vw;
+}
+
+@mixin padding-content-medium {
+  padding: 10vh 15vw;
+}
+
 @mixin padding-content-large {
-  padding: 3rem 25rem;
+  padding: 10vh 25vw;
 }
 
 @font-face {
   font-family: "Readex Pro";
   src: url("/assets/fonts/ReadexPro.ttf");
+}
+
+:root {
+  --color-primary: #110903;
+  --color-accent: #f6dd28;
+  --color-error: #ed0312;
+  --color-tertiary: #3b28b8;
+  --color-offset: #f4fffd;
+
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  font-family: "Readex Pro";
+  height: 100%;
+
+  ::selection {
+    color: var(--color-accent);
+    background-color: var(--color-primary);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }

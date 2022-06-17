@@ -1,6 +1,6 @@
 .heading__text {
   display: block;
-  font-size: 4rem;
+  font-size: 65px;
   font-weight: 600;
 }
 
@@ -8,15 +8,14 @@
   display: block;
   font-size: x-large;
   font-style: italic;
-  padding: 1.5em 0;
+  padding: 5vh 0;
 }
 
-.heading__contact {
-  border: var(--border);
+.homepage__contact {
   float: left;
-  font-size: large;
-  margin-bottom: 3em;
-  padding: 1em;
+  font-size: larger;
+  padding: 2vh;
 
+  @include border;
   @include link-hover;
 }
