@@ -1,3 +1,8 @@
+- name: Colorways VS Code
+  url: https://github.com/franthormel/colorways-vscode-theme
+  category: Design & Development
+  img: works/colorways_vscode.jpg
+
 - name: Bon Appétit Demo
   url: https://github.com/franthormel/bon_appetit
   category: Design & Development
