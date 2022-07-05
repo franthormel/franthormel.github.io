@@ -10,7 +10,7 @@
 
   background-color: var(--color-accent);
   color: var(--color-primary);
-  font-family: "Readex Pro";
+  font-family: "Readex Pro", sans-serif;
   height: 100%;
 
   ::selection {
@@ -71,4 +71,9 @@ body {
 @font-face {
   font-family: "Readex Pro";
   src: url("/assets/fonts/ReadexPro.ttf");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/assets/fonts/PlayfairDisplay.ttf");
 }
