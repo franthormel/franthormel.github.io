@@ -5,7 +5,7 @@ book:
     title: Emotional Intelligence Why It Can Matter More Than IQ
 category: Psychology
 date:
-    read: June 16, 2022 # Change from actual date from GoodReads
+    read: June 16, 2022
     review: June 25, 2022
 note: This serves as a rundown of the book and does not serve in any way to be a complete replacement. It is highly advised to read the book itself.
 ---
@@ -37,8 +37,8 @@ There are two (2) types of personal intelligence: ***Inter*personal** intelligen
 
 The majority of people will describe an intelligent person as someone who possesses practical people skills like the following:
 1.  **Knowing one's emotions**: *Self-awareness* is the cornerstone of emotional intelligence, being fully aware of the emotion, one is currently experiencing and being able to monitor such emotion.
-2.  **Managing emotions**: How to handle feelings of oneself so that they can be appropriate.
-3.  **Motivating oneself**: Being able to create emotions to serve a goal.
+2.  **Managing emotions**: How to handle feelings of oneself so that they can be appropriate. Being able to comfort one's distress and anxiety provides support in life's setbacks.
+3.  **Motivating oneself**: Being able to create emotions to serve a goal. Emotional self-control—delaying gratification and stifling impulsiveness undergirds every accomplishment.
 4.  **Recognizing emotion in others**: *Empathy*, *altruism*, or *people skill*. More attunement to the subtle social signals that signify other people's needs or wants.
 5.  **Handling relationships**: The art of relations in the larger scope is a skill in managing emotions in others.
 
@@ -49,7 +49,7 @@ This ability to conceive other feelings assists in various domains in life and i
 
 Conveyance of emotions is passed usually through nonverbal ways (about 90 percent): voice tones, gestures, facial expressions, etc.
 
-The term used before was **motor mimicry** and in the 1920s the word **empathy** was coined by E. B. Titchener. Titchener's theory suggests that **empathy comes from a physical imitation of the distress of another** and another distinct term **sympathy, is the general plight of another with no sharing of whatever that person is feeling.**
+The term used before was *motor mimicry* and in the 1920s the word *empathy* was coined by E. B. Titchener. Titchener's theory suggests that **empathy comes from a physical imitation of the distress of another** and another distinct term **sympathy, is the general plight of another with no sharing of whatever that person is feeling.**
 
 This feeling stems from around two-and-a-half-year-old toddlers wherein they can distinguish other's existence and they too realize others' distress which is different from theirs.
 
