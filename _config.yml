@@ -19,7 +19,7 @@ contact_label: Get in touch
 # Default website title
 title: Franthormel
 
-note_article: This serves as a rundown of the book and does not serve in any way to be a complete replacement. It is highly advised to read the book itself.
+article_footer: This serves as a rundown and does not serve in any way to be a complete replacement of the said material. It is highly advised to read the actual source itself.
 
 defaults:
   - scope:

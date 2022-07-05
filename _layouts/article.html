@@ -2,7 +2,52 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
-<!-- TODO 2: List of posts -->
+<main class="article">
+  <section>
+    <!-- Title -->
+    <h1 class="article__header">{{ page.title }}</h1>
 
-{{ content }}
+    <!-- Book Details (if any) -->
+    <section class="article__book">
+      <a class="article__book__url" target="_blank" href="{{ page.book.url }}">
+        {{ page.book.title }} {% if page.book.author %}
+        <span class="article__book__author">by</span> {{ page.book.author }} {%
+        endif %}
+      </a>
+    </section>
+
+    <!-- Date posted -->
+    <section class="article__date">
+      {% if page.date_posted %} {{ page.date | date_to_string }} {% endif %}
+    </section>
+
+    <!-- Image (if any) -->
+    {% if page.image %}
+    <section class="article__image">
+      <img
+        src="/assets/img/posts/{{ page.image.file }}"
+        class="article__image__file"
+      />
+      {% if page.image.credit %}
+      <a
+        href="{{ page.image.credit.url }}"
+        target="_blank"
+        class="article__image__credit"
+      >
+        Photo by {{ page.image.credit.name }}
+      </a>
+      {% endif %}
+    </section>
+    {% endif %}
+  </section>
+
+  <section class="article__content">{{ content }}</section>
+
+  <footer class="article__footer">
+    {% if page.footer %} 
+    <p>{{ page.footer }}</p>
+    {% else %}
+    <p>{{ site.article_footer }}</p>
+    {% endif %}
+  </footer>
+</main>

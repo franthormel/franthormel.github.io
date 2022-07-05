@@ -1,0 +1,45 @@
+.article {
+  @include layout;
+  max-width: 600px;
+}
+
+.article__header {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.article__book,
+.article__date {
+  margin-bottom: 1rem;
+}
+
+.article__book__author {
+  font-style: italic;
+}
+
+.article__book__url,
+.article__image__credit {
+  text-decoration-line: underline;
+}
+
+.article__image {
+  margin: 3rem 0;
+}
+
+.article__image__file {
+  max-width: 600px;
+  margin-bottom: 0.2rem;
+}
+
+.article__content {
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.article__footer {
+  border: var(--border);
+  font-size: 0.85rem;
+  margin-top: 5rem;
+  padding: 2rem;
+  text-align: center;
+}
