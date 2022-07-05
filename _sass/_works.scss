@@ -3,7 +3,6 @@
 }
 
 .works__items {
-  box-sizing: border-box;
   display: grid;
   gap: 4%;
 
@@ -20,9 +19,9 @@
 
 .work__item__img {
   height: 500px;
-  max-width: 100%;
   object-fit: cover;
-  width: 100%;
+
+  @include responsive-image;
 }
 
 .work__item__text {

@@ -3,7 +3,7 @@ title: Works
 ---
 
 <main class="works">
-  <div class="works__items">
+  <section class="works__items">
     {% for work in site.data.works %}
     <a class="work__item" href="{{ work.url }}" target="_blank">
       <img
@@ -17,5 +17,5 @@ title: Works
       </div>
     </a>
     {% endfor %}
-  </div>
+  </section>
 </main>

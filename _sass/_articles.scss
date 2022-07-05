@@ -1,0 +1,7 @@
+.articles {
+  @include layout;
+}
+
+.articles__post__img {
+  @include responsive-image;
+}

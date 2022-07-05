@@ -68,6 +68,10 @@ body {
   }
 }
 
+@mixin responsive__image {
+  max-width: 100%;
+}
+
 @font-face {
   font-family: "Readex Pro";
   src: url("/assets/fonts/ReadexPro.ttf");

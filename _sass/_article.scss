@@ -34,7 +34,8 @@
 
 .article__image__file {
   margin-bottom: 0.2rem;
-  max-width: 100%;
+
+  @include responsive-image;
 }
 
 .article__image__credit {
