@@ -40,6 +40,14 @@ body {
 }
 
 @mixin link-hover {
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: 25ms cubic-bezier(0.75, 0.46, 0.52, 0.85);
+  }
+
+  @media screen and (prefers-reduced-motion) {
+    transition: none;
+  }
+
   &:hover {
     background-color: var(--color-primary);
     color: var(--color-accent);
