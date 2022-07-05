@@ -24,6 +24,11 @@ note_article: This serves as a rundown of the book and does not serve in any way
 defaults:
   - scope:
       path: ""
+      type: "posts"
+    values:
+      layout: "article"
+  - scope:
+      path: ""
     values:
       layout: "default"
 

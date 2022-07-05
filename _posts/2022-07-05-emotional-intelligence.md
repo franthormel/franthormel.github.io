@@ -3,9 +3,8 @@ title: Intellect is the only important life quality, or is it not?
 book:
     author: Daniel Goleman
     title: Emotional Intelligence Why It Can Matter More Than IQ
-category: Psychology
 date_read: June 16, 2022
-note: This serves as a rundown of the book and does not serve in any way to be a complete replacement. It is highly advised to read the book itself.
+<!-- TODO 4: Add tags and categories -->
 ---
 
 
