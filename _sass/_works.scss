@@ -20,6 +20,7 @@
 .work__item__img {
   height: 500px;
   object-fit: cover;
+  width: 100%;
 
   @include responsive-image;
 }

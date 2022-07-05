@@ -31,7 +31,7 @@ body {
 
 @mixin layout($padding-top-bottom: 5rem) {
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
   padding: $padding-top-bottom 0;
 }
 
@@ -68,7 +68,7 @@ body {
   }
 }
 
-@mixin responsive__image {
+@mixin responsive-image {
   max-width: 100%;
 }
 
