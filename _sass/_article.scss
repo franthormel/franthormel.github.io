@@ -1,6 +1,7 @@
 .article {
-  @include layout;
   max-width: 600px;
+
+  @include layout;
 }
 
 .article__header {
@@ -26,8 +27,12 @@
   margin: 3rem 0;
 }
 
+.article__image__credit {
+  display: block;
+}
+
 .article__image__file {
-  max-width: 600px;
+  max-width: 100%;
   margin-bottom: 0.2rem;
 }
 

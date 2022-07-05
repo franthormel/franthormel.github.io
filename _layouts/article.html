@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<main class="article">
+<section class="article">
   <section>
     <!-- Title -->
     <h1 class="article__header">{{ page.title }}</h1>
@@ -41,13 +41,13 @@ layout: default
     {% endif %}
   </section>
 
-  <section class="article__content">{{ content }}</section>
+  <main class="article__content">{{ content }}</main>
 
   <footer class="article__footer">
-    {% if page.footer %} 
+    {% if page.footer %}
     <p>{{ page.footer }}</p>
     {% else %}
     <p>{{ site.article_footer }}</p>
     {% endif %}
   </footer>
-</main>
+</section>
