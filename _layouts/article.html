@@ -4,24 +4,24 @@ layout: default
 
 <section class="article">
   <section>
-    <!-- Title -->
     <h1 class="article__header">{{ page.title }}</h1>
 
-    <!-- Book Details (if any) -->
-    <section class="article__book">
-      <a class="article__book__url" target="_blank" href="{{ page.book.url }}">
-        {{ page.book.title }} {% if page.book.author %}
-        <span class="article__book__author">by</span> {{ page.book.author }} {%
-        endif %}
+    <section class="article__source">
+      <a
+        class="article__source__url"
+        target="_blank"
+        href="{{ page.source.url }}"
+      >
+        {{ page.source.title }} {% if page.source.author %}
+        <span class="article__source__author">by</span> {{ page.source.author }}
+        {% endif %}
       </a>
     </section>
 
-    <!-- Date posted -->
     <section class="article__date">
       {% if page.date_posted %} {{ page.date | date_to_string }} {% endif %}
     </section>
 
-    <!-- Image (if any) -->
     {% if page.image %}
     <section class="article__image">
       <img

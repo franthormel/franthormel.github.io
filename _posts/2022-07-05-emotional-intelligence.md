@@ -1,6 +1,6 @@
 ---
 title: Intellect is the only important life quality, or is it not?
-book:
+source:
     author: Daniel Goleman
     title: Emotional Intelligence Why It Can Matter More Than IQ
     url: https://www.goodreads.com/book/show/26329.Emotional_Intelligence
@@ -16,7 +16,7 @@ image:
 
 It has always been taught to us that IQ is what guides our destiny and it cannot be changed through experiences. However, have you experienced situations wherein people of moderate IQ fair better against life's challenges compared to those with a superior aptitude?
 
-The author of the book presented the idea of **emotional intelligence** which composes: **self-control, zeal, persistence, and self-motivation.**
+The author of the book presented the equal importance of **emotional intelligence** which composes: **self-control, zeal, persistence, and self-motivation.**
 
 
 
@@ -36,7 +36,7 @@ Current academic qualities can only prepare us for the challenges that await us 
 
 Emotionally capable individuals are well-tempered and marshall control over their inner battles, effectively deal with and read other people's feelings and it can also serve as an advantage in life's domain.
 
-There are two (2) types of personal intelligence: ***Inter*personal** intelligence is the ability in understanding other people and ***Intra*personal** intelligence, is the capacity to form an accurate and realistic model of oneself and use that model to operate effectively in life.
+There are two (2) types of personal intelligence: **Interpersonal** intelligence is the ability in understanding other people and **Intrapersonal** intelligence, is the capacity to form an accurate and realistic model of oneself and use that model to operate effectively in life.
 
 The majority of people will describe an intelligent person as someone who possesses practical people skills like the following:
 1.  **Knowing one's emotions**: *Self-awareness* is the cornerstone of emotional intelligence, being fully aware of the emotion, one is currently experiencing and being able to monitor such emotion.
