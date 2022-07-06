@@ -4,15 +4,15 @@ title: Articles
 ---
 
 <main class="articles">
-  <section>
+  <section class="articles__posts">
     {% for post in site.posts %}
-    <a href="{{ post.url }}" target="_blank">
+    <a class="articles__post" href="{{ post.url }}" target="_blank">
         <img
         src="/assets/img/posts/{{ post.image.file }}"
         class="articles__post__img"
         alt="Article image">
 
-        <header class="articles__post__header">{{ post.title }}</header>
+        <h1 class="articles__post__header">{{ post.title }}</h1>
       </img>
       <!-- TODO 5: Try using post excerpts -->
     </li>

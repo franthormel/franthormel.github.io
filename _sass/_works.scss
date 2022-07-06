@@ -4,7 +4,7 @@
 
 .works__items {
   display: grid;
-  gap: 4%;
+  gap: 5rem;
 
   @include media-grid-columns($cols: 2, $max-width: 1050px);
 }

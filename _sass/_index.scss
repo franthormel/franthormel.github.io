@@ -1,4 +1,15 @@
 // Definitions only: native selectors, custom font, and SASS mixins.
+
+@font-face {
+  font-family: "Readex Pro";
+  src: url("/assets/fonts/ReadexPro.ttf");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/assets/fonts/PlayfairDisplay.ttf");
+}
+
 :root {
   --color-primary: #110903;
   --color-accent: #f6dd28;
@@ -29,9 +40,9 @@ body {
   padding: 0;
 }
 
-@mixin layout($padding-top-bottom: 5rem) {
+@mixin layout($padding-top-bottom: 5rem, $width: 80%) {
   margin: 0 auto;
-  width: 60%;
+  width: $width;
   padding: $padding-top-bottom 0;
 }
 
@@ -70,14 +81,4 @@ body {
 
 @mixin responsive-image {
   max-width: 100%;
-}
-
-@font-face {
-  font-family: "Readex Pro";
-  src: url("/assets/fonts/ReadexPro.ttf");
-}
-
-@font-face {
-  font-family: "Playfair Display";
-  src: url("/assets/fonts/PlayfairDisplay.ttf");
 }
