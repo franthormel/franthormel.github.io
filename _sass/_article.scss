@@ -7,20 +7,20 @@
 .article__header {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
+  font-weight: 600;
   margin-bottom: 1.5rem;
 }
 
-.article__source,
-.article__date {
+.article__source {
   margin-bottom: 1rem;
 }
 
 .article__date {
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
-.article__source__url,
-.article__image__credit {
+.article__source__url {
   text-decoration-line: underline;
 }
 
@@ -41,6 +41,7 @@
 .article__image__credit {
   display: block;
   font-size: 0.75rem;
+  text-decoration-line: underline;
 }
 
 .article__content {

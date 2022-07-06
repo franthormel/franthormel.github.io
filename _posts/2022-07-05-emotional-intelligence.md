@@ -7,6 +7,7 @@ source:
 date_posted: June 16, 2022
 image:
     file: 2022-07-05-emotional-intelligence.jpg
+    alt: Emotional intelligence
     credit:
         name: Jeremy Bezanger
         url: https://unsplash.com/photos/sLax-F9cEUc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
