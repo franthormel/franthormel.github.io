@@ -55,6 +55,7 @@
 
 .article__footer__tags {
   display: flex;
+  flex-wrap: wrap;
   font-size: 0.9rem;
   justify-content: space-between;
   margin: 0 2rem;
