@@ -4,7 +4,8 @@ source:
     author: Daniel Goleman
     title: Emotional Intelligence Why It Can Matter More Than IQ
     url: https://www.goodreads.com/book/show/26329.Emotional_Intelligence
-date_posted: June 16, 2022
+category: psychology
+tags: psychology, emotion, intelligence, book
 image:
     file: 2022-07-05-emotional-intelligence.jpg
     credit:
