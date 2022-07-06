@@ -5,7 +5,7 @@ source:
     title: Emotional Intelligence Why It Can Matter More Than IQ
     url: https://www.goodreads.com/book/show/26329.Emotional_Intelligence
 category: psychology
-tags: psychology, emotion, intelligence, book
+tags: [psychology, emotion, intelligence, book]
 image:
     file: 2022-07-05-emotional-intelligence.jpg
     alt: Emotional intelligence

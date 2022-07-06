@@ -50,9 +50,24 @@
 }
 
 .article__footer {
-  border: var(--border);
-  font-size: 0.85rem;
-  margin-top: 5rem;
-  padding: 2rem;
+  margin-top: 10rem;
+}
+
+.article__footer__tags {
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+
+.article__footer__divider {
+  background-color: var(--color-primary);
+  height: 1px;
+  margin: 1rem 0;
+}
+
+.article__footer__note {
+  font-size: 0.8rem;
+  margin: 0 2rem;
   text-align: center;
 }

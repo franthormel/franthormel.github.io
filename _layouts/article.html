@@ -41,10 +41,18 @@ layout: default
   <main class="article__content">{{ content }}</main>
 
   <footer class="article__footer">
+    <section class="article__footer__tags">
+      {% for tag in page.tags %}
+      <span>{{ tag | upcase }}</span>
+      {% endfor %}
+    </section>
+
+    <div class="article__footer__divider"></div>
+
     {% if page.footer %}
-    <p>{{ page.footer }}</p>
+    <p class="article__footer__note">{{ page.footer }}</p>
     {% else %}
-    <p>{{ site.article_footer }}</p>
+    <p class="article__footer__note">{{ site.article_footer }}</p>
     {% endif %}
   </footer>
 </article>
