@@ -3,7 +3,7 @@ title: Articles
 ---
 
 <main class="articles">
-  <section class="articles__posts">
+  <article class="articles__posts">
     {% for post in site.posts %}
     <a class="articles__post" href="{{ post.url }}" target="_blank">
         <img
@@ -12,9 +12,11 @@ title: Articles
         alt="{{ post.image.alt }} article image">
 
         <h1 class="articles__post__header">{{ post.title }}</h1>
+        
+        <p class="articles__post__date">{{ post.date | date_to_string }}</p>
       </img>
       <!-- TODO 5: Try using post excerpts -->
     </li>
     {% endfor %}
-  </section>
+  </article>
 </main>

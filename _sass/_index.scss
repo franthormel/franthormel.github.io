@@ -66,13 +66,12 @@ body {
 
 @mixin layout($padding-top-bottom: 5rem, $width: 80%) {
   margin: 0 auto;
-  width: $width;
   padding: $padding-top-bottom 0;
+  width: $width;
 }
 
-
 @mixin layout-content {
-  @include layout-content;
+  @include layout($width: 65%);
 }
 
 @mixin link-hover {

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="article">
+<article class="article">
   <section>
     <header class="article__header">{{ page.title }}</header>
 
@@ -18,9 +18,7 @@ layout: default
       </a>
     </section>
 
-    <section class="article__date">
-      {% if page.date_posted %} {{ page.date | date_to_string }} {% endif %}
-    </section>
+    <span class="article__date">{{ page.date | date_to_string }}</span>
 
     <section class="article__image">
       <img
@@ -49,4 +47,4 @@ layout: default
     <p>{{ site.article_footer }}</p>
     {% endif %}
   </footer>
-</section>
+</article>
