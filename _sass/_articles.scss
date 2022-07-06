@@ -1,0 +1,33 @@
+.articles {
+  @include layout-content;
+}
+
+.articles__posts {
+  @include grid-items;
+}
+
+.articles__post:first-child {
+  font-size: 1.5rem;
+
+  @include grid-responsive;
+}
+
+.articles__post__img {
+  @include grid-responsive-image;
+}
+
+.article__post__category {
+  font-size: 1rem;
+  margin: 10px 0 0;
+}
+
+.articles__post__header {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.articles__post__date {
+  font-size: 1rem;
+  margin: 0;
+}

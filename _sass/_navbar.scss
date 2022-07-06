@@ -8,24 +8,19 @@
 .navbar__logo {
   height: 50px;
   min-width: 50px;
-  max-width: 100%;
   width: 50px;
+
+  @include responsive-image;
 }
 
 .navbar__links {
+  align-items: center;
   display: flex;
-
-  :last-child {
-    margin-left: 5%;
-
-    @media screen and (min-width: 450px) {
-      margin-left: 10%;
-    }
-  }
 }
 
 .navbar__link {
   font-size: 1.5rem;
+  margin-left: 1rem;
   padding: 0.5rem 1rem;
 
   @include link-hover;

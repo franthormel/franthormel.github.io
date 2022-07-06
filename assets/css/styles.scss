@@ -1,9 +1,11 @@
 ---
 ---
 
-@import "index"; // NOTE: Index file must always be on top
+@import "index";
 
 @import "about";
+@import "article";
+@import "articles";
 @import "heading";
 @import "navbar";
 @import "works";

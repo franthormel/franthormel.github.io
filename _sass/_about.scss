@@ -1,5 +1,5 @@
 .about {
-  @include layout;
+  @include layout-content;
 }
 
 .about__body {
@@ -21,19 +21,19 @@
 
 .about__social__item {
   border: var(--border);
-  padding: 9%;
   margin: 0;
+  padding: 9%;
 }
 
 .about__social__logo {
   display: block;
   height: 2rem;
-  max-width: 100%;
   width: 2rem;
+
+  @include responsive-image;
 }
 
 .about__social__text {
   font-size: 1.1rem;
   font-weight: 400;
-  text-align: justify;
 }

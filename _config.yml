@@ -19,7 +19,14 @@ contact_label: Get in touch
 # Default website title
 title: Franthormel
 
+article_footer: This serves as a pocket guide and not a complete replacement. It is highly advised to read the actual material.
+
 defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "article"
   - scope:
       path: ""
     values:

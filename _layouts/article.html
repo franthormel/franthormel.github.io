@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<article class="article">
+  <section>
+    <header class="article__header">{{ page.title }}</header>
+
+    <section class="article__source">
+      <a
+        class="article__source__url"
+        target="_blank"
+        href="{{ page.source.url }}"
+      >
+        {{ page.source.title }} {% if page.source.author %}
+        <span class="article__source__author">by</span> {{ page.source.author }}
+        {% endif %}
+      </a>
+    </section>
+
+    <span class="article__date">{{ page.date | date_to_string }}</span>
+
+    <section class="article__image">
+      <img
+        src="/assets/img/posts/{{ page.image.file }}"
+        class="article__image__file"
+        alt="{{ page.image.alt }} article image"
+      />
+      {% if page.image.credit %}
+      <a
+        href="{{ page.image.credit.url }}"
+        target="_blank"
+        class="article__image__credit"
+      >
+        Photo by {{ page.image.credit.name }}
+      </a>
+      {% endif %}
+    </section>
+  </section>
+
+  <main class="article__content">{{ content }}</main>
+
+  <footer class="article__footer">
+    <section class="article__footer__tags">
+      {% for tag in page.tags %}
+      <span>{{ tag | upcase }}</span>
+      {% endfor %}
+    </section>
+
+    <div class="article__footer__divider"></div>
+
+    {% if page.footer %}
+    <p class="article__footer__note">{{ page.footer }}</p>
+    {% else %}
+    <p class="article__footer__note">{{ site.article_footer }}</p>
+    {% endif %}
+  </footer>
+</article>

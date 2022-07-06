@@ -1,29 +1,17 @@
 .works {
-  @include layout;
+  @include layout-content;
 }
 
 .works__items {
-  box-sizing: border-box;
-  display: grid;
-  gap: 4%;
-
-  @include media-grid-columns($cols: 2, $max-width: 1050px);
+  @include grid-items;
 }
 
 .work__item:first-child {
-  grid-column: 1 / 3;
-
-  @media all and (max-width: 1050px) {
-    grid-column: 1;
-  }
+  @include grid-responsive;
 }
 
 .work__item__img {
-  border: var(--border);
-  height: 500px;
-  max-width: 100%;
-  object-fit: cover;
-  width: 100%;
+  @include grid-responsive-image;
 }
 
 .work__item__text {
@@ -35,14 +23,14 @@
 }
 
 .work__item__text__name {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 500;
 
   @include media-display-block;
 }
 
 .work__item__text__category {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 300;
 
   @include media-display-block($margin: true);
