@@ -12,12 +12,11 @@ title: Articles
         alt="{{ post.image.alt }} article image">
 
         <p class="article__post__category">{{ post.category | upcase }}</p>
-
+        
         <h1 class="articles__post__header">{{ post.title }}</h1>
-
+        
         <p class="articles__post__date">{{ post.date | date_to_string }}</p>
       </img>
-      <!-- TODO 5: Try using post excerpts -->
     </li>
     {% endfor %}
   </article>
