@@ -27,11 +27,11 @@ title: About
     <a href="{{ profile.link }}" target="_blank">
       <div class="about__social__item">
         <img
+          alt="{{ profile.name }} logo"
           class="about__social__logo"
           src="/assets/img/svg/brand-{{ profile.name | downcase }}.svg"
-          alt="{{ profile.name }} logo"
         />
-        <h3 class="about__social__header">{{ profile.name | capitalize }}</h3>
+        <h3>{{ profile.name | capitalize }}</h3>
         <span class="about__social__text">{{ profile.description }}</span>
       </div>
     </a>

@@ -1,5 +1,3 @@
-// Definitions only: native selectors, custom font, and SASS mixins.
-
 @font-face {
   font-family: "Readex Pro";
   src: url("/assets/fonts/ReadexPro.ttf");
@@ -71,8 +69,8 @@ body {
   width: 100%;
 
   @media all and (max-width: 950px) {
-    min-height: 300px;
     max-height: 500px;
+    min-height: 300px;
   }
 
   @if $explicit-height {

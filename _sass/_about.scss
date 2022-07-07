@@ -10,24 +10,23 @@
   }
 }
 
-.about__me__body {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  text-align: justify;
-}
-
 .about__me__header {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
   font-weight: bold;
 }
 
+.about__me__body {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
 .about__social {
   display: grid;
   gap: 2.5rem;
-  margin-top: 5rem;
-
   grid-template-columns: repeat(3, auto);
+  margin-top: 5rem;
 
   @media all and (max-width: 900px) {
     grid-template-columns: repeat(1, auto);
