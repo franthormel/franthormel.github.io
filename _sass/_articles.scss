@@ -1,9 +1,9 @@
 .articles {
-  @include layout-content;
+  @include layout;
 }
 
 .articles__posts {
-  @include grid-items;
+  @include grid-items-by-2;
 }
 
 .articles__post:first-child {
@@ -13,10 +13,10 @@
 }
 
 .articles__post__img {
-  @include grid-responsive-image;
+  @include image-responsive;
 }
 
-.article__post__category {
+.articles__post__category {
   font-size: 1rem;
   margin: 10px 0 0;
 }

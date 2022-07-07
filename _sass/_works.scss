@@ -1,9 +1,16 @@
-.works {
-  @include layout-content;
+@mixin media-display-block {
+  @media all and (max-width: 620px) {
+    display: block;
+    margin-top: 5px;
+  }
 }
 
-.works__items {
-  @include grid-items;
+.works {
+  @include layout;
+}
+
+.work__items {
+  @include grid-items-by-2;
 }
 
 .work__item:first-child {
@@ -11,27 +18,21 @@
 }
 
 .work__item__img {
-  @include grid-responsive-image;
+  @include image-responsive;
 }
 
-.work__item__text {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2%;
-
-  @include media-display-block;
-}
-
-.work__item__text__name {
-  font-size: 1.5rem;
+.work__item__name {
+  font-size: 1.4rem;
   font-weight: 500;
+  margin: 10px 0 5px;
 
   @include media-display-block;
 }
 
-.work__item__text__category {
-  font-size: 1.5rem;
+.work__item__category {
+  font-size: 1.1rem;
   font-weight: 300;
+  margin: 0;
 
-  @include media-display-block($margin: true);
+  @include media-display-block;
 }

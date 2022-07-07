@@ -2,26 +2,43 @@
   border-bottom: var(--border);
   display: flex;
   justify-content: space-between;
-  padding: 2rem 10%;
+  padding: 2rem 10vw;
+
+  @media all and (max-width: 200px) {
+    border-bottom: none;
+  }
 }
 
 .navbar__logo {
   height: 50px;
+  max-width: 100%;
   min-width: 50px;
   width: 50px;
-
-  @include responsive-image;
 }
 
 .navbar__links {
   align-items: center;
-  display: flex;
+  display: inline-flex;
+
+  @media all and (max-width: 500px) {
+    display: block;
+  }
 }
 
 .navbar__link {
+  align-items: center;
+  display: flex;
   font-size: 1.5rem;
-  margin-left: 1rem;
-  padding: 0.5rem 1rem;
+  height: 50px;
+  padding: 0 10px;
 
   @include link-hover;
+}
+
+.navbar__link:nth-child(n + 2) {
+  margin-left: 2rem;
+
+  @media all and (max-width: 500px) {
+    margin-left: 0;
+  }
 }

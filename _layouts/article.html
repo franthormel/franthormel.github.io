@@ -9,8 +9,8 @@ layout: default
     <section class="article__source">
       <a
         class="article__source__url"
-        target="_blank"
         href="{{ page.source.url }}"
+        target="_blank"
       >
         {{ page.source.title }} {% if page.source.author %}
         <span class="article__source__author">by</span> {{ page.source.author }}
@@ -22,15 +22,15 @@ layout: default
 
     <section class="article__image">
       <img
-        src="/assets/img/posts/{{ page.image.file }}"
-        class="article__image__file"
         alt="{{ page.image.alt }} article image"
+        class="article__image__file"
+        src="/assets/img/posts/{{ page.image.file }}"
       />
       {% if page.image.credit %}
       <a
+        class="article__image__credit"
         href="{{ page.image.credit.url }}"
         target="_blank"
-        class="article__image__credit"
       >
         Photo by {{ page.image.credit.name }}
       </a>

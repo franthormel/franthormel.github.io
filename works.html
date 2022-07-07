@@ -3,18 +3,16 @@ title: Works
 ---
 
 <main class="works">
-  <section class="works__items">
+  <section class="work__items">
     {% for work in site.data.works %}
     <a class="work__item" href="{{ work.url }}" target="_blank">
       <img
         class="work__item__img"
-        src="/assets/img/{{ work.img }}"
+        src="/assets/img/{{ work.image.name }}"
         alt="{{ work.name }} banner image"
       />
-      <div class="work__item__text">
-        <span class="work__item__text__name">{{ work.name }}</span>
-        <span class="work__item__text__category">{{ work.category }}</span>
-      </div>
+      <p class="work__item__name">{{ work.name }}</p>
+      <p class="work__item__category">{{ work.category }}</p>
     </a>
     {% endfor %}
   </section>

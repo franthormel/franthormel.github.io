@@ -7,16 +7,11 @@
 .article__header {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: bold;
   margin-bottom: 1.5rem;
 }
 
 .article__source {
-  margin-bottom: 1rem;
-}
-
-.article__date {
-  font-weight: 600;
   margin-bottom: 1rem;
 }
 
@@ -28,6 +23,11 @@
   font-style: italic;
 }
 
+.article__date {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
 .article__image {
   margin: 3rem 0;
 }
@@ -35,13 +35,11 @@
 .article__image__file {
   margin-bottom: 0.2rem;
 
-  @include responsive-image;
+  @include image-responsive($explicit-height: false);
 }
 
 .article__image__credit {
-  display: block;
-  font-size: 0.75rem;
-  text-decoration-line: underline;
+  @include image-credit;
 }
 
 .article__content {
