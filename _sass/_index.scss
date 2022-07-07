@@ -40,11 +40,19 @@ body {
   padding: 0;
 }
 
+@mixin grid-columns($cols, $max-width) {
+  grid-template-columns: repeat($cols, auto);
+
+  @media all and (max-width: $max-width) {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
 @mixin grid-items {
   display: grid;
   gap: 5rem;
 
-  @include media-grid-columns($cols: 2, $max-width: 1050px);
+  @include grid-columns($cols: 2, $max-width: 1050px);
 }
 
 @mixin grid-responsive {
@@ -58,10 +66,9 @@ body {
 
 @mixin grid-responsive-image {
   height: 500px;
+  max-width: 100%;
   object-fit: cover;
   width: 100%;
-
-  @include responsive-image;
 }
 
 @mixin layout($padding-top-bottom: 5rem, $width: 80vw) {
@@ -87,26 +94,4 @@ body {
     background-color: var(--color-primary);
     color: var(--color-accent);
   }
-}
-
-@mixin media-display-block($margin: false) {
-  @media all and (max-width: 600px) {
-    display: block;
-
-    @if $margin {
-      margin-top: 1%;
-    }
-  }
-}
-
-@mixin media-grid-columns($cols, $max-width) {
-  grid-template-columns: repeat($cols, auto);
-
-  @media all and (max-width: $max-width) {
-    grid-template-columns: repeat(1, auto);
-  }
-}
-
-@mixin responsive-image {
-  max-width: 100%;
 }

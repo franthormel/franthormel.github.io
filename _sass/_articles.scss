@@ -13,7 +13,7 @@
 }
 
 .articles__post__img {
-  @include grid-responsive-image;
+  max-width: 100%;
 }
 
 .article__post__category {

@@ -1,5 +1,11 @@
+@mixin media-display-block {
+  @media all and (max-width: 620px) {
+    display: block;
+  }
+}
+
 .works {
-  @include layout-content;
+  @include layout;
 }
 
 .works__items {
@@ -17,21 +23,22 @@
 .work__item__text {
   display: flex;
   justify-content: space-between;
-  margin-top: 2%;
+  margin-top: 10px;
 
   @include media-display-block;
 }
 
-.work__item__text__name {
+.work__item__name {
   font-size: 1.5rem;
   font-weight: 500;
 
   @include media-display-block;
 }
 
-.work__item__text__category {
+.work__item__category {
   font-size: 1.5rem;
   font-weight: 300;
+  margin-top: 5px;
 
-  @include media-display-block($margin: true);
+  @include media-display-block;
 }

@@ -16,7 +16,7 @@
   gap: 3%;
   margin-top: 5%;
 
-  @include media-grid-columns($cols: 3, $max-width: 680px);
+  @include grid-columns($cols: 3, $max-width: 680px);
 }
 
 .about__social__item {
@@ -28,9 +28,8 @@
 .about__social__logo {
   display: block;
   height: 2rem;
+  max-width: 100%;
   width: 2rem;
-
-  @include responsive-image;
 }
 
 .about__social__text {
