@@ -1,6 +1,7 @@
 @mixin media-display-block {
   @media all and (max-width: 620px) {
     display: block;
+    margin-top: 5px;
   }
 }
 
@@ -38,7 +39,6 @@
 .work__item__category {
   font-size: 1.5rem;
   font-weight: 300;
-  margin-top: 5px;
 
   @include media-display-block;
 }
