@@ -4,6 +4,10 @@
 
 .about__me {
   width: 55%;
+
+  @media all and (max-width: 900px) {
+    width: 100%;
+  }
 }
 
 .about__me__body {
@@ -25,7 +29,7 @@
 
   grid-template-columns: repeat(3, auto);
 
-  @media all and (max-width: 680px) {
+  @media all and (max-width: 900px) {
     grid-template-columns: repeat(1, auto);
   }
 }
