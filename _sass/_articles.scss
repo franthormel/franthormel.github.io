@@ -3,7 +3,7 @@
 }
 
 .articles__posts {
-  @include grid-items;
+  @include grid-items-by-2;
 }
 
 .articles__post:first-child {

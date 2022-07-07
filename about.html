@@ -3,26 +3,26 @@ title: About
 ---
 
 <main class="about">
-  <div class="about__me">
-    <h2 class="about__header">Hi, how are you?</h2>
-    <p class="about__body">
+  <section class="about__me">
+    <header class="about__me__header">Hi, how are you?</header>
+    <p class="about__me__body">
       I have been focusing on strengthening my skills to improve my work. That
       involves web development, mobile applications, design, and user
       experience.
     </p>
-    <p class="about__body">
+    <p class="about__me__body">
       My education primarily is in information technology therefore I have
       experience in networking and databases. I have recently picked up user
       interface and design in 2021 after I visited Dribbble.
     </p>
-    <p class="about__body">
+    <p class="about__me__body">
       I have also been reading new things and any other fields that I deem
       interesting. I hope there is a chance you and I can exchange our thoughts
       and ideas.
     </p>
-    <p class="about__body">Hope we can meet again!</p>
-  </div>
-  <div class="about__social">
+    <p class="about__me__body">Hope we can meet again!</p>
+  </section>
+  <section class="about__social">
     {% for profile in site.data.social_profiles %}
     <a href="{{ profile.link }}" target="_blank">
       <div class="about__social__item">
@@ -32,9 +32,9 @@ title: About
           alt="{{ profile.name }} logo"
         />
         <h3 class="about__social__header">{{ profile.name | capitalize }}</h3>
-        <p class="about__social__text">{{ profile.description }}</p>
+        <span class="about__social__text">{{ profile.description }}</span>
       </div>
     </a>
     {% endfor %}
-  </div>
+  </section>
 </main>

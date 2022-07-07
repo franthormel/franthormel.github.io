@@ -40,19 +40,14 @@ body {
   padding: 0;
 }
 
-@mixin grid-columns($cols, $max-width) {
-  grid-template-columns: repeat($cols, auto);
-
-  @media all and (max-width: $max-width) {
-    grid-template-columns: repeat(1, auto);
-  }
-}
-
-@mixin grid-items {
+@mixin grid-items-by-2 {
   display: grid;
   gap: 5rem;
+  grid-template-columns: repeat(2, auto);
 
-  @include grid-columns($cols: 2, $max-width: 1050px);
+  @media all and (max-width: 1050px) {
+    grid-template-columns: repeat(1, auto);
+  }
 }
 
 @mixin grid-responsive {

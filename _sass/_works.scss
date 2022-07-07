@@ -9,7 +9,7 @@
 }
 
 .works__items {
-  @include grid-items;
+  @include grid-items-by-2;
 }
 
 .work__item:first-child {

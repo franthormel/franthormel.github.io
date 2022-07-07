@@ -1,11 +1,11 @@
-- name: GitHub
-  link: https://github.com/franthormel/
-  description: "I progress most of my works and activity here."
-
 - name: Dribbble
   link: https://dribbble.com/denmind
-  description: "I can showcase my recent works that I can draw inspiration and motivation from."
+  description: "Occasionally uploading personal and drawing ideas from other people's designs."
+
+- name: GitHub
+  link: https://github.com/franthormel/
+  description: "Improving and creating my works."
 
 - name: Goodreads
   link: https://www.goodreads.com/franthormel
-  description: "I gain important lessons and new knowledge from my occasional reading of interesting materials."
+  description: "Learning about new and interesting material."
