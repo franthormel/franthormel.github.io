@@ -80,9 +80,19 @@ body {
   }
 }
 
-@mixin responsive-image {
-  height: 500px;
+@mixin responsive-image($explicit-height: true) {
   max-width: 100%;
   object-fit: cover;
   width: 100%;
+
+  @if $explicit-height {
+    @media all and (min-height: 950px) {
+      height: 500px;
+    }
+
+    @media all and (max-height: 950px) {
+      min-height: 300px;
+      max-height: 500px;
+    }
+  }
 }
