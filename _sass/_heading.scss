@@ -6,20 +6,23 @@
   display: block;
   font-size: 4rem;
   font-weight: 600;
+  margin: 0;
 }
 
 .heading__tagline {
   display: block;
-  font-size: 1.7rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
   font-style: italic;
+  margin: 2rem 0;
 }
 
 .heading__contact {
   border: var(--border);
   float: left;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  padding: 1rem 1.2rem;
+  padding: 1rem;
 
   @include link-hover;
 }
