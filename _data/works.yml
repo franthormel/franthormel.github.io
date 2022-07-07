@@ -1,7 +1,7 @@
 - name: Colorways VS Code
   url: https://github.com/franthormel/colorways-vscode
   category: Design & Development
-  img:
+  image:
     name: works/colorways_vscode.jpg
     credit:
       name: Jason Leung
@@ -10,7 +10,7 @@
 - name: Bon Appétit Demo
   url: https://github.com/franthormel/bon_appetit
   category: Design & Development
-  img:
+  image:
     name: works/bon_appetit_demo.jpg
     credit:
       name: Markus Spiske
@@ -19,7 +19,7 @@
 - name: Caster
   url: https://github.com/franthormel/caster
   category: Design & Development
-  img:
+  image:
     name: works/caster.jpg
     credit:
       name: Luis Quintero
@@ -28,7 +28,7 @@
 - name: Sealpass
   url: https://github.com/franthormel/sealpass
   category: Design & Development
-  img:
+  image:
     name: works/sealpass.jpg
     credit:
       name: Jose Larrazolo

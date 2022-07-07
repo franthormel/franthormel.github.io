@@ -13,7 +13,7 @@
 }
 
 .articles__post__img {
-  @include responsive-image;
+  @include image-responsive;
 }
 
 .article__post__category {

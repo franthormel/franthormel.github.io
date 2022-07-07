@@ -59,6 +59,29 @@ body {
   }
 }
 
+@mixin image-credit {
+  display: block;
+  font-size: 0.75rem;
+  text-decoration-line: underline;
+}
+
+@mixin image-responsive($explicit-height: true) {
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+
+  @media all and (max-width: 950px) {
+    min-height: 300px;
+    max-height: 500px;
+  }
+
+  @if $explicit-height {
+    @media all and (min-width: 950px) {
+      height: 500px;
+    }
+  }
+}
+
 @mixin layout($padding-top-bottom: 5rem, $width: 80vw) {
   margin: 0 auto;
   padding: $padding-top-bottom 0;
@@ -77,22 +100,5 @@ body {
   &:hover {
     background-color: var(--color-primary);
     color: var(--color-accent);
-  }
-}
-
-@mixin responsive-image($explicit-height: true) {
-  max-width: 100%;
-  object-fit: cover;
-  width: 100%;
-
-  @media all and (max-width: 950px) {
-    min-height: 300px;
-    max-height: 500px;
-  }
-
-  @if $explicit-height {
-    @media all and (min-width: 950px) {
-      height: 500px;
-    }
   }
 }

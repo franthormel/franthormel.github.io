@@ -13,12 +13,16 @@
   @include grid-items-by-2;
 }
 
+.work__item {
+  display: block;
+}
+
 .work__item:first-child {
   @include grid-responsive;
 }
 
 .work__item__img {
-  @include responsive-image;
+  @include image-responsive;
 }
 
 .work__item__text {

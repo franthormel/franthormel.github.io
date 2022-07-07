@@ -35,13 +35,11 @@
 .article__image__file {
   margin-bottom: 0.2rem;
 
-  @include responsive-image($explicit-height: false);
+  @include image-responsive($explicit-height: false);
 }
 
 .article__image__credit {
-  display: block;
-  font-size: 0.75rem;
-  text-decoration-line: underline;
+  @include image-credit;
 }
 
 .article__content {
