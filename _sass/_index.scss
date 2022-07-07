@@ -64,14 +64,14 @@ body {
   @include responsive-image;
 }
 
-@mixin layout($padding-top-bottom: 5rem, $width: 80%) {
+@mixin layout($padding-top-bottom: 5rem, $width: 80vw) {
   margin: 0 auto;
   padding: $padding-top-bottom 0;
   width: $width;
 }
 
 @mixin layout-content {
-  @include layout($width: 65%);
+  @include layout($width: 65vw);
 }
 
 @mixin link-hover {
