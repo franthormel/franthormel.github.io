@@ -1,5 +1,5 @@
 .articles {
-  @include layout-content;
+  @include layout($width: 70vw);
 }
 
 .articles__posts {
@@ -13,7 +13,7 @@
 }
 
 .articles__post__img {
-  max-width: 100%;
+  @include responsive-image;
 }
 
 .article__post__category {

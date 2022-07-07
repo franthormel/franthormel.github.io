@@ -59,21 +59,10 @@ body {
   }
 }
 
-@mixin grid-responsive-image {
-  height: 500px;
-  max-width: 100%;
-  object-fit: cover;
-  width: 100%;
-}
-
 @mixin layout($padding-top-bottom: 5rem, $width: 80vw) {
   margin: 0 auto;
   padding: $padding-top-bottom 0;
   width: $width;
-}
-
-@mixin layout-content {
-  @include layout($width: 65vw);
 }
 
 @mixin link-hover {
@@ -89,4 +78,11 @@ body {
     background-color: var(--color-primary);
     color: var(--color-accent);
   }
+}
+
+@mixin responsive-image {
+  height: 500px;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
 }

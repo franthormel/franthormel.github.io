@@ -17,7 +17,7 @@
 }
 
 .work__item__img {
-  @include grid-responsive-image;
+  @include responsive-image;
 }
 
 .work__item__text {
