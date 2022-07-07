@@ -12,11 +12,10 @@ Other font families used are [Readex Pro](https://fonts.google.com/specimen/Read
 
 ## Image attributions
 Special thanks to the following talented photographers:
-* [Krzysztof Kotkowicz](https://unsplash.com/es/@lancaster83?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-* [Markus Winkler](https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-* [Robert Eklund](https://unsplash.com/@roberteklund?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-* [Toa Heftiba](https://unsplash.com/@heftiba?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-* [Robert Eklund](https://unsplash.com/@roberteklund?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-* [Markus Winkler](https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-  
+1. [Jeremy Bezanger](https://unsplash.com/@unarchive?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+1. [Jose Larrazolo](https://unsplash.com/@joseadd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+1. [Jason Leung](https://unsplash.com/@ninjason?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+1. [Luis Quintero](https://unsplash.com/@jibarox?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+1. [Markus Spiske](https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
 I always appreciate whenever I find a picture that matches my palette and these individuals have it.

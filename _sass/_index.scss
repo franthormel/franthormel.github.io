@@ -85,14 +85,14 @@ body {
   object-fit: cover;
   width: 100%;
 
-  @if $explicit-height {
-    @media all and (min-height: 950px) {
-      height: 500px;
-    }
+  @media all and (max-width: 950px) {
+    min-height: 300px;
+    max-height: 500px;
+  }
 
-    @media all and (max-height: 950px) {
-      min-height: 300px;
-      max-height: 500px;
+  @if $explicit-height {
+    @media all and (min-width: 950px) {
+      height: 500px;
     }
   }
 }

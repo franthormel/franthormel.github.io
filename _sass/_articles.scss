@@ -1,5 +1,5 @@
 .articles {
-  @include layout($width: 70vw);
+  @include layout;
 }
 
 .articles__posts {
