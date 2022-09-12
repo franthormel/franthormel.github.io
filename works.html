@@ -7,12 +7,15 @@ title: Works
     {% for work in site.data.works %}
     <a class="work__item" href="{{ work.url }}" target="_blank">
       <img
-        class="work__item__img"
-        src="/assets/img/{{ work.image.name }}"
+        class="work__item__image"
+        src="/assets/img/works/{{ work.image.name }}"
         alt="{{ work.name }} banner image"
       />
       <p class="work__item__name">{{ work.name }}</p>
       <p class="work__item__category">{{ work.category }}</p>
+      <p class="work__item__image__credit">
+        Photo by {{ work.image.credit.name }}
+      </p>
     </a>
     {% endfor %}
   </section>

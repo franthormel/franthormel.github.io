@@ -12,13 +12,18 @@ layout: default
         href="{{ page.source.url }}"
         target="_blank"
       >
-        {{ page.source.title }} {% if page.source.author %}
+        {{ page.source.type}}: {{ page.source.title }} {% if page.source.author %}
         <span class="article__source__author">by</span> {{ page.source.author }}
         {% endif %}
       </a>
     </section>
 
-    <span class="article__date">{{ page.date | date_to_string }}</span>
+    <section class="article__dates">
+      <p class="article__date">Published {{ page.date | date_to_long_string  }}</span>
+      {% if page.last_updated %}
+      <p class="article__date">Updated {{ page.last_updated | date_to_long_string  }}</span>
+      {% endif %}
+    </section>
 
     <section class="article__image">
       <img
@@ -27,11 +32,7 @@ layout: default
         src="/assets/img/posts/{{ page.image.file }}"
       />
       {% if page.image.credit %}
-      <a
-        class="article__image__credit"
-        href="{{ page.image.credit.url }}"
-        target="_blank"
-      >
+      <a class="article__image__credit" href="{{ page.image.credit.url }}" target="_blank">
         Photo by {{ page.image.credit.name }}
       </a>
       {% endif %}

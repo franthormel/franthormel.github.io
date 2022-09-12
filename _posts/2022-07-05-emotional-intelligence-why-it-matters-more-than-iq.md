@@ -3,15 +3,16 @@ title: Intellect is the only important life quality, or is it not?
 source:
     author: Daniel Goleman
     title: Emotional Intelligence Why It Can Matter More Than IQ
+    type: Book
     url: https://www.goodreads.com/book/show/26329.Emotional_Intelligence
 category: psychology
-tags: [psychology, emotion, intelligence, book]
 image:
-    file: 2022-07-05-emotional-intelligence.jpg
+    file: jeremy-bezanger-sLax-F9cEUc-unsplash.jpg
     alt: Emotional intelligence
     credit:
         name: Jeremy Bezanger
-        url: https://unsplash.com/photos/sLax-F9cEUc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+        url: https://unsplash.com/photos/sLax-F9cEUc
+tags: [psychology, emotion, intelligence, book]
 ---
 
 
@@ -21,7 +22,7 @@ The author of the book presented the equal importance of **emotional intelligenc
 
 
 
-### Emotion's Purpose
+## Emotion's Purpose
 For moments in our existence, we have been swept with uncontrollable emotions that seem to be knee-jerk reactions to situations we deem to be of threat to us. Parents are willing to sacrifice themselves in exchange for their child's survivability,  anger is produced when a hostile encounter is created, or an expression cold as ice is felt when an embarrassing moment occurs.
 
 For most, they would argue that such situations could only be remedied with intellect alone, however, there was a time in our pre-history wherein intellect did not at least come into full fruition. Our ancestors had to rely on quick reactions to hostilities and dangerous environments to protect themselves and their families from danger and ensure the species' continuity.
@@ -30,7 +31,7 @@ The incontrollable emotions we therefore occasionally exhibit can be attributed 
 
 
 
-### Emotional intelligence nature
+## Emotional intelligence nature
 Individuals even with high IQ can be poor navigators in the sea of life and at best IQ only contributes to 20 percent of life's success leaving a spacious 80 percent for other forces.
 
 Current academic qualities can only prepare us for the challenges that await us with lesser to no effect. Emotional intelligence offers a new window of meta-cognition which aids us in managing what we are gifted with and the raw intellect that we possess.
@@ -46,7 +47,8 @@ The majority of people will describe an intelligent person as someone who posses
 4.  **Recognizing emotion in others**: *Empathy*, *altruism*, or *people skill*. More attunement to the subtle social signals that signify other people's needs or wants.
 5.  **Handling relationships**: The art of relations in the larger scope is a skill in managing emotions in others.
 
-### Empathy
+
+## Empathy
 > Empathy builds on self-awareness; the more open we are to our own emotions, the more skill we will be in reading feelings.
 
 This ability to conceive other feelings assists in various domains in life and its absence is apparent in violent criminals.
@@ -61,7 +63,8 @@ This feeling stems from around two-and-a-half-year-old toddlers wherein they can
 
 Another's trouble is also our own, to feel with another is to care for. In this sense, we can make that the *origin of morality is found in empathy*. The more empathic people are, the more they favor the moral principle that resources should be allocated according to people's needs.
 
-### Fundamentals of the emotionally intelligent
+
+## Fundamentals of the emotionally intelligent
 It is to be emphasized that we always have choices about how we respond to emotion, and the more we know of ways to respond to an emotion, the richer our lives can be.
 
 **Self-awareness** is a core fundamental, recognizing one's feelings, building a thorough definition for them, recognizing the connections with one's thoughts, feelings, and reactions, knowing if such thoughts and feelings are ruling our decisions, foreseeing the consequences of alternatives, and applying such insights to critical decisions and issues.
@@ -72,7 +75,8 @@ A key ability is also **empathy**, understanding others, their feelings, their p
 
 Other competencies are also important and many of them are in the form of interpersonal skills such as: reading social and emotional cues, active listening, capability to resist negative influences, and performing appropriately in a given situation.
 
-### Significance of emotional intelligence
+
+## Significance of emotional intelligence
 Aptitude in emotions contributes greater compared to the social and economic factors to one's modern world survivability and resiliency. Individuals who are emotionally intelligent share key traits:
 1. Winning sociability draws people towards them.
 2. Self-confidence.

@@ -17,14 +17,18 @@
   @include grid-responsive;
 }
 
-.work__item__img {
+.work__item__image {
   @include image-responsive;
+}
+
+.work__item__image__credit {
+  @include image-credit;
 }
 
 .work__item__name {
   font-size: 1.4rem;
   font-weight: 500;
-  margin: 10px 0 5px;
+  margin: 5px 0 0;
 
   @include media-display-block;
 }
@@ -32,7 +36,7 @@
 .work__item__category {
   font-size: 1.1rem;
   font-weight: 300;
-  margin: 0;
+  margin: 5px 0;
 
   @include media-display-block;
 }
