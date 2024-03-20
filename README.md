@@ -3,6 +3,10 @@
 
 My website hosted using GitHub pages and Jekyll.
 
+## Setup
+
+Please check [this guide](https://jekyllrb.com/docs/#instructions)
+
 ## Typography
 The website's logo *F* uses the [UnifrakturMaguntia](https://fonts.google.com/specimen/UnifrakturMaguntia) which is based on [Peter Wiegel](https://www.peter-wiegel.de/MainzerFraktur.html)'s [Berthold Mainzer Fraktur](https://www.peter-wiegel.de/MainzerFraktur.html).
 
