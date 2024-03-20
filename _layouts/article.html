@@ -6,17 +6,18 @@ layout: default
   <section>
     <header class="article__header">{{ page.title }}</header>
 
-    <section class="article__source">
-      <a
-        class="article__source__url"
-        href="{{ page.source.url }}"
-        target="_blank"
-      >
-        {{ page.source.type}}: {{ page.source.title }} {% if page.source.author %}
-        <span class="article__source__author">by</span> {{ page.source.author }}
-        {% endif %}
-      </a>
-    </section>
+    {% if page.source %}
+      <section class="article__source">
+        <a
+          class="article__source__url"
+          href="{{ page.source.url }}"
+          target="_blank">
+          {{ page.source.type}}: {{ page.source.title }} {% if page.source.author %}
+          <span class="article__source__author">by</span> {{ page.source.author }}
+          {% endif %}
+        </a>
+      </section>
+    {% endif %}
 
     <section class="article__dates">
       <p class="article__date">Published {{ page.date | date_to_long_string  }}</span>

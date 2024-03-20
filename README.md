@@ -45,3 +45,7 @@ tags: ...
 last_updated: ...
 ---
 ```
+
+The `source` property is:
+1. Useful for books, journals, and other sources.
+2. Optional
