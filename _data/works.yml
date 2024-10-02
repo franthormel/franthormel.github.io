@@ -1,3 +1,23 @@
+# Add latest works at the top
+
+- name: Shiny
+  url: https://github.com/franthormel/shiny
+  category: Data Design & Development
+  image:
+    name: bekky-bekks-kCauzc280z4-unsplash.jpg
+    credit:
+      name: Bekky Bekks
+      url: https://unsplash.com/photos/yellow-textile-with-white-line-kCauzc280z4
+
+- name: Forent
+  url: https://github.com/franthormel/forent
+  category: Design & Development
+  image:
+    name: zach-rowlandson-w5MSZZf48kM-unsplash.jpg
+    credit:
+      name: Zach Rowlandson
+      url: https://unsplash.com/photos/two-brown-concrete-buildings-w5MSZZf48kM
+
 - name: Colorways VS Code
   url: https://github.com/franthormel/colorways-vscode
   category: Design & Development
